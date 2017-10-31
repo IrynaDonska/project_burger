@@ -1,0 +1,77 @@
+.pagination {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+    top: 13.9%;
+    right: -1.6%;
+
+}
+
+.pagination-list {
+
+
+
+    &__item {
+        position: relative;
+        content: "";
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        margin-bottom: 7px;
+
+        &-active {
+          border: 1px solid white;
+        }
+
+        &:hover {
+            border: 1px solid white;  
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            background-color: white;
+            margin-top: 3.5px;
+            margin-left: 3.5px;
+           
+        } 
+        
+
+    } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
