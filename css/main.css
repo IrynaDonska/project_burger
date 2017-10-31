@@ -367,7 +367,7 @@ ul {
       color: #2f3234; }
 
 .section__welcome-view {
-  background-image: url("../../pictures/backgrounds/first-texture.png"), url("../../pictures/backgrounds/welcome.jpg");
+  background-image: url("./../pictures/backgrounds/first-texture.png"), url("./../pictures/backgrounds/welcome.jpg");
   background-position: top right, center bottom;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -416,7 +416,7 @@ ul {
     width: 451px;
     height: 420px;
     overflow: hidden;
-    background: url("../../pictures/icons/drops.svg") 0 65px no-repeat;
+    background: url("./../pictures/icons/drops.svg") 0 65px no-repeat;
     margin-left: 15px;
     padding: 0 0 0 40px;
     margin-right: 12px; }
@@ -460,7 +460,7 @@ ul {
   justify-content: center;
   margin-bottom: 6.15%; }
   .scroll-down__img {
-    background: url("../../pictures/icons/arrow-scroll.svg") center center no-repeat;
+    background: url("./../pictures/icons/arrow-scroll.svg") center center no-repeat;
     width: 30px;
     height: 15px; }
 
