@@ -177,28 +177,28 @@ ul {
       -o-transition: 1s;
       transition: 1s; }
     .feedback-items .feedback-item__1 {
-      background: url("../../pictures/backgrounds/feedback/1.jpg") center center no-repeat;
+      background: url("./../pictures/backgrounds/feedback/1.jpg") center center no-repeat;
       background-size: cover; }
     .feedback-items .feedback-item__2 {
-      background: url("../../pictures/backgrounds/feedback/2.jpg") center center no-repeat;
+      background: url("./../pictures/backgrounds/feedback/2.jpg") center center no-repeat;
       background-size: cover; }
     .feedback-items .feedback-item__3 {
-      background: url("../../pictures/backgrounds/feedback/3.jpg") center center no-repeat;
+      background: url("./../pictures/backgrounds/feedback/3.jpg") center center no-repeat;
       background-size: cover; }
     .feedback-items .feedback-item__4 {
-      background: url("../../pictures/backgrounds/feedback/4.jpg") center center no-repeat;
+      background: url("./../pictures/backgrounds/feedback/4.jpg") center center no-repeat;
       background-size: cover; }
     .feedback-items .feedback-item__5 {
-      background: url("../../pictures/backgrounds/feedback/5.jpg") center center no-repeat;
+      background: url("./../pictures/backgrounds/feedback/5.jpg") center center no-repeat;
       background-size: cover; }
     .feedback-items .feedback-item__6 {
-      background: url("../../pictures/backgrounds/feedback/6.jpg") center center no-repeat;
+      background: url("./../pictures/backgrounds/feedback/6.jpg") center center no-repeat;
       background-size: cover; }
     .feedback-items .feedback-item__7 {
-      background: url("../../pictures/backgrounds/feedback/7.jpg") center center no-repeat;
+      background: url("./../pictures/backgrounds/feedback/7.jpg") center center no-repeat;
       background-size: cover; }
     .feedback-items .feedback-item__8 {
-      background: url("../../pictures/backgrounds/feedback/8.jpg") center center no-repeat;
+      background: url("./../pictures/backgrounds/feedback/8.jpg") center center no-repeat;
       background-size: cover; }
     .feedback-items .feedback-item img {
       width: 100%;
