@@ -1,0 +1,47 @@
+.socials__icon {
+    fill: $white;
+    width: rem(20);
+    height: rem(20);
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+      transition: 0.5s;
+    }
+    
+}
+
+
+.footer__mobile-icon {
+  fill: $orange;
+  width: rem(12);
+  height: rem(12);
+  cursor: pointer;
+  margin-right: rem(8);
+
+}
+
+.reason__img-sprite {
+
+  &_meat{
+    fill: $orange;
+    width: rem(97);
+    height: rem(89);
+  }
+
+  &_hand {
+    fill: #f8b43a;
+    width: rem(73);
+    height: rem(85);
+  }
+
+  &_natural {
+    fill: #8ac03e;
+    width: rem(88);
+    height: rem(75);
+  }
+
+}
+  
+

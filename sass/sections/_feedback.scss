@@ -1,94 +1,60 @@
-.container__feedback {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
 
+
+.section-title_feedback { 
+    position: absolute;
+    z-index: 1;
+    left: 40%;
+    
 }
 
+
+
 .feedback-items {
-    width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    
+    position: relative;
+
 
     .feedback-item {
         display: flex;
         width: 25%;
-        height: 50vh;
+        height: 50%;
         position: relative;
         filter: grayscale(100%);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        .feedback-pic {
+            width: 100%;
+            height: 100%;
+        }
+    
+
 
         &::after {
             content: "";
-            display: none;
+            display: block;
             position: absolute;
-            background-color:  #141414;
-            opacity: 0.7;
-            top: 0;
-            left: 0;
+            background: rgba(#454545, .7);
+            top: rem(0);
+            left: rem(0);
+            right: rem(0);
+            bottom: rem(0);
             height: 100%;
             width: 100%;
             z-index: 1;
+            opacity: 0;
             
         }
 
+
         &:hover::after {
-            display: block; 
+            opacity: 1;
             transition: 1s;
 
-        }
-
-
-
-
-        &__1 {
-            background: url("./../pictures/backgrounds/feedback/1.jpg") center center no-repeat;
-            background-size: cover;
-        }
-
-        &__2 {
-            background: url("./../pictures/backgrounds/feedback/2.jpg") center center no-repeat;
-            background-size: cover;
-        
-        }
-
-        &__3 {
-            background: url("./../pictures/backgrounds/feedback/3.jpg") center center no-repeat;
-            background-size: cover;
-        
-        }
-    
-        &__4 {
-            background: url("./../pictures/backgrounds/feedback/4.jpg") center center no-repeat;
-            background-size: cover;
-        
-        }
-    
-        &__5 {
-            background: url("./../pictures/backgrounds/feedback/5.jpg") center center no-repeat;
-            background-size: cover;
-        
-        }
-    
-        &__6 {
-            background: url("./../pictures/backgrounds/feedback/6.jpg") center center no-repeat;
-            background-size: cover;
-        }
-    
-        &__7 {
-            background: url("./../pictures/backgrounds/feedback/7.jpg") center center no-repeat;
-            background-size: cover;
-        }
-    
-        &__8 {
-        
-            background: url("./../pictures/backgrounds/feedback/8.jpg") center center no-repeat;
-            background-size: cover;
         }
 
 
@@ -103,36 +69,34 @@
             position: absolute;
             display: flex;
             flex-direction: column;
-            color: #ffffff;
-            padding: 15.3% 10.8% 9.33% 6.15%;
+            color: $white;
+            margin: 15.3% 10.8% 9.33% 6.15%;
             opacity: 0;
             z-index: 2;
             
 
-
-
-            .feedback-name {
-                @include h1;
-                font-size: 14px;
+            &__name {
+                @include gagalin-title;
+                font-size: rem(14);
                 line-height: 2.0079em;
-                color: #ffffff;
-                margin-bottom: 30px;
+                color: $white ;
+                margin-bottom: rem(30);
             }
             
 
-            .feedback-description {
+            &__description {
                 font-family: 'ubuntulight';
                 font-weight: normal;
                 font-style: normal;
-                font-size: 14px;
+                font-size: rem(14);
                 line-height: 1.7143em;
-                margin-bottom: 17px;
+                margin-bottom: rem(17);
             }
 
-            .feedback-button {
-                @include button-text;
-                background: #2f3234;
-                width: 110px;
+            .feedback-button__button {
+                @include order-button;
+                background: $dark;
+                width: rem(110);
             
                 &:hover {
                     background: #1f2122;
@@ -146,12 +110,15 @@
 }
 
 
+
 .feedback-item:hover .feedback-text {
     opacity: 1;
     transition: opacity 1s;
 
-
-
 }
+
+
+
+
 
 

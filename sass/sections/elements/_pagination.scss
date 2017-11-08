@@ -1,50 +1,45 @@
 .pagination {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     display: flex;
     flex-flow: column;
     top: 13.9%;
-    right: -1.6%;
-
+    right: 4.5%;
+    
 }
 
 .pagination-list {
 
-
-
-    &__item {
+    .pagination-item {
         position: relative;
         content: "";
         border-radius: 50%;
-        width: 15px;
-        height: 15px;
-        margin-bottom: 7px;
+        width: rem(16);
+        height: rem(16);
+        margin-bottom: rem(7);
 
-        &-active {
-          border: 1px solid white;
+        &_active {
+          border: rem(1) solid white;
         }
 
         &:hover {
-            border: 1px solid white;  
+            border: rem(1) solid white;  
         }
 
         &::after {
             position: absolute;
             content: "";
             border-radius: 50%;
-            width: 6px;
-            height: 6px;
+            width: rem(6);
+            height: rem(6);
             background-color: white;
-            margin-top: 3.5px;
-            margin-left: 3.5px;
-           
+            margin-top: rem(4);
+            margin-left: rem(4);
         } 
         
-
     } 
 
 }
-
 
 
 

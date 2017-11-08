@@ -9,223 +9,544 @@
     <title>MR Burger</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="./js/svg4everybody.js"></script>
+    <script>
+        svg4everybody();
+    </script>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section section__welcome-view">
-                <div class="container container__welcome-view">
+            <section class="section welcome-view">
+                <div class="container container_welcome-view">
                     <header class="header">
-                        <div class="header-logo"><img src="./pictures/icons/logo.svg" class="header-logo__img" alt="Логотип"></div>
-                        <ul class="menu-list">
-                            <li class="menu-list__item "><a href="#" class="menu-list__link ">О нас</a></li>
-                            <li class="menu-list__item"><a href="#" class="menu-list__link">Бургеры</a></li>
-                            <li class="menu-list__item"><a href="#" class="menu-list__link"> Команда</a></li>
-                            <li class="menu-list__item"><a href="#" class="menu-list__link">Меню</a></li>
-                            <li class="menu-list__item"><a href="#" class="menu-list__link">Отзывы</a></li>
-                            <li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
-                        </ul>
-                        <form action="#" class="header-form-button">
-                            <button class="order-button">Заказать</button>
-                        </form>
+                        <div class="header__logo">
+                            <a class="logo">
+                                <img src="./pictures/icons/logo.svg" class="logo__img" alt="Логотип">
+                            </a>
+                        </div>
+                        <div class="header__links">
+                            <div class="header__menu">
+                                <nav class="nav">
+                                    <ul class="nav__list">
+                                        <li class="nav__item ">
+                                            <a href="#" class="nav__link ">О нас</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">Бургеры</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link"> Команда</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">Меню</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">Отзывы</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="menu-buttons">
+                                    <button class="order-button">Заказать</button>
+                                    <a class="hamburger-menu-link menu-link" href="">
+                                        <div class="hamburger-menu-link__bars menu-link__block "></div>
+                                    </a>
+                                </div>
+                        </div>
+
                     </header>
-                    <div class="welcome-burger">
-                        <div class="welcome-burger-pic">
-                            <img src="./pictures/pictures/main_burger.png" alt="Burger" class="welcome-burge-pic__img">
+                    <div class="welcome-content">
+                        <div class="welcome-pic">
+                            <img src="./pictures/pictures/main_burger.png" alt="Burger" class="welcome-pic__img">
                         </div>
-                        <div class="welcome-title">
-                            <h1 class="we-make">Мы делаем</h1>
-                            <h2 class="natural-burgers">Натуральные бургеры</h2>
+                        <div class="welcome-text">
+                            <h1 class="section-title">Мы делаем</h1>
+                            <div class="welcome__description">Натуральные бургеры</div>
                         </div>
                     </div>
-                    <div class="scroll-down"><a href="#" class="scroll-down__img"></a>
+                    <div class="scroll-down">
+                        <a href="#" class="scroll-down__img"></a>
                     </div>
-                    <aside class="pagination">
-                        <ul class="pagination-list">
-                            <li class="pagination-list__item pagination-list__item-active"><a href="#" class="pagination-list__link "></a></li>
-                            <li class="pagination-list__item "><a href="#" class="pagination-list__link"></a></li>
-                            <li class="pagination-list__item"><a href="#" class="pagination-list__link"></a></li>
-                            <li class="pagination-list__item"><a href="#" class="pagination-list__link"></a></li>
-                            <li class="pagination-list__item"><a href="#" class="pagination-list__link"></a></li>
-                            <li class="pagination-list__item"><a href="#" class="pagination-list__link"></a></li>
-                            <li class="pagination-list__item"><a href="#" class="pagination-list__link"></a></li>
-                            <li class="pagination-list__item"><a href="#" class="pagination-list__link"></a></li>
-                        </ul>
-                    </aside>
                 </div>
             </section>
-            <section class="section section__we-best">
-                <div class="container container__we-best ">
+            <section class="section we-best">
+                <div class="container container_we-best ">
                     <div class="we-best-content">
-                        <h1 class="we-best__title">Мы лучшие</h1>
-                        <div class="we-best__reason">
-                            <div class="reason">
-                                <div class="reason__img"><img class="meat" src="./pictures/icons/meat.svg" alt="Мясо"></div>
+                        <h2 class="section-title section-title_color_black section-title_position_center">Мы лучшие</h2>
+                        <ul class="reasons-list">
+                            <li class="reason">
+                                <div class="reason__img">
+                                    <svg class="reason__img-sprite reason__img-sprite_meat">
+                                        <use xlink:href="pictures/icons/sprite/sprite.svg#meat" />
+                                    </svg>
+                                </div>
                                 <div class="reason__title">100% свежее мясо</div>
                                 <div class="reason__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
-                            </div>
-                            <div class="reason">
-                                <div class="reason__img"><img class="hand" src="./pictures/icons/hand.svg" alt="Рука"></div>
+                            </li>
+                            <li class="reason">
+                                <div class="reason__img">
+                                    <svg class="reason__img-sprite reason__img-sprite_hand">
+                                        <use xlink:href="pictures/icons/sprite/sprite.svg#hand" />
+                                    </svg>
+                                </div>
                                 <div class="reason__title">Ручная сборка</div>
                                 <div class="reason__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие
                                     притягивает сюжетный реформаторский пафос.</div>
-                            </div>
-                            <div class="reason">
-                                <div class="reason__img"><img class="natural" src="./pictures/icons/natural.svg" alt="Натуральны"></div>
-                                <div class="reason__title">Натуральные 
-                                    ингредиенты
+                            </li>
+                            <li class="reason">
+                                <div class="reason__img">
+                                    <svg class="reason__img-sprite reason__img-sprite_natural">
+                                        <use xlink:href="pictures/icons/sprite/sprite.svg#natural" />
+                                    </svg>
                                 </div>
+                                <div class="reason__title">Натуральные ингредиенты </div>
                                 <div class="reason__description">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
             </section>
             <section class="section section__burgers">
                 <div class="container">
+                    <h2>Бургеры</h2>
                 </div>
             </section>
-            </section>
-            <section class="section section__team">
-                <div class="container">
-                </div>
-            </section>
-            <section class="section section__menu">
-                <div class="container">
-                </div>
-            </section>
-            <section class="section section__feedback">
-                <div class="feedback-page">
-                    <div class="container container__feedback">
-                        <ul class="feedback-items">
-                            <li class="feedback-item feedback-item__1">
-                                <img src="./pictures/backgrounds/feedback/1.jpg" alt="Константин Спилберг" class="visuallyhidden" >
-                                <div class="feedback-text">
-                                    <div class="feedback-name">Константин Спилберг</div>
-                                    <div class="feedback-description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
-                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                                        расплавленным.
+            <section class="section team">
+                <div class="container container_team">
+                    <div class="team-content">
+                        <h2 class="section-title section-title_team">Команда</h2>
+                        <ul class="team-accordeon">
+                            <li class="team-accordeon__item">
+                                <a class="team-accordeon__trigger">Даниэл Редклиф</a>
+                                <div class="team-accordeon__text  #">
+                                    <div class="team-accordeon__pic" style="background-image:url(/pictures/backgrounds/team/2.jpg)">
+                                        <img src="pictures/backgrounds/team/2.jpg" alt="Даниэл Редклиф" class="team-accordeon__pic-img visuallyhidden">
                                     </div>
-                                    <form action="#" class="feedback-form-button">
-                                        <button class="feedback-button"> Подробнее</button>
-                                        <div class="button-more"></div>
-                                    </form>
+                                    <div class="team-accordeon__description">
+                                        <div class="team-accordeon__description-position">Оператор</div>
+                                        <div class="team-accordeon__description-about">
+                                            <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="feedback-item feedback-item__2">
-                                <img src="./pictures/backgrounds/feedback/2.jpg" alt="Константин Спилберг" class="visuallyhidden">
-                                <div class="feedback-text">
-                                    <div class="feedback-name">Константин Спилберг</div>
-                                    <div class="feedback-description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
-                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                                        расплавленным.
+                            <li class="team-accordeon__item  team-accordeon__item_active">
+                                <a class="team-accordeon__trigger">Ричард Джеймс</a>
+                                <div class="team-accordeon__text #">
+                                    <div class="team-accordeon__pic" style="background-image:url(/pictures/backgrounds/team/2.jpg)">
+                                        <img src="pictures/backgrounds/team/2.jpg" alt="Даниэл Редклиф" class="team-accordeon__pic-img visuallyhidden">
                                     </div>
-                                    <form action="#" class="feedback-form-button">
-                                        <button class="feedback-button"> Подробнее</button>
-                                        <div class="button-more"></div>
-                                    </form>
+                                    <div class="team-accordeon__description">
+                                        <div class="team-accordeon__description-position">Оператор</div>
+                                        <div class="team-accordeon__description-about">
+                                            <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="feedback-item feedback-item__3">
-                                <img src="./pictures/backgrounds/feedback/3.jpg" alt="Константин Спилберг" class="visuallyhidden">
-                                <div class="feedback-text">
-                                    <div class="feedback-name">Константин Спилберг</div>
-                                    <div class="feedback-description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
-                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                                        расплавленным.
+                            <li class="team-accordeon__item">
+                                <a class="team-accordeon__trigger">Джейк Финн</a>
+                                <div class="team-accordeon__text #">
+                                    <div class="team-accordeon__pic" style="background-image:url(/pictures/backgrounds/team/2.jpg)">
+                                        <img src="pictures/backgrounds/team/2.jpg" alt="Даниэл Редклиф" class="team-accordeon__pic-img visuallyhidden">
                                     </div>
-                                    <form action="#" class="feedback-form-button">
-                                        <button class="feedback-button"> Подробнее</button>
-                                        <div class="button-more"></div>
-                                    </form>
+                                    <div class="team-accordeon__description">
+                                        <div class="team-accordeon__description-position">Оператор</div>
+                                        <div class="team-accordeon__description-about">
+                                            <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="feedback-item feedback-item__4 ">
-                                <img src="./pictures/backgrounds/feedback/4.jpg" alt="Константин Спилберг" class="visuallyhidden">
-                                <div class="feedback-text">
-                                    <div class="feedback-name">Константин Спилберг</div>
-                                    <div class="feedback-description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
-                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                                        расплавленным.
+                            <li class="team-accordeon__item">
+                                <a class="team-accordeon__trigger">Николай Иванов</a>
+                                <div class="team-accordeon__text #">
+                                    <div class="team-accordeon__pic" style="background-image:url(/pictures/backgrounds/team/2.jpg)">
+                                        <img src="pictures/backgrounds/team/2.jpg" alt="Даниэл Редклиф" class="team-accordeon__pic-img visuallyhidden">
                                     </div>
-                                    <form action="#" class="feedback-form-button">
-                                        <button class="feedback-button"> Подробнее</button>
-                                        <div class="button-more"></div>
-                                    </form>
-                                </div>
-                            </li>
-                            <li class="feedback-item feedback-item__5">
-                                <img src="./pictures/backgrounds/feedback/5.jpg" alt="Константин Спилберг" class="visuallyhidden">
-                                <div class="feedback-text">
-                                    <div class="feedback-name">Константин Спилберг</div>
-                                    <div class="feedback-description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
-                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                                        расплавленным.
+                                    <div class="team-accordeon__description">
+                                        <div class="team-accordeon__description-position">Оператор</div>
+                                        <div class="team-accordeon__description-about">
+                                            <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                        </div>
                                     </div>
-                                    <form action="#" class="feedback-form-button">
-                                        <button class="feedback-button"> Подробнее</button>
-                                        <div class="button-more"></div>
-                                    </form>
-                                </div>
-                            </li>
-                            <li class="feedback-item feedback-item__6">
-                                <img src="./pictures/backgrounds/feedback/6.jpg" alt="Константин Спилберг" class="visuallyhidden">
-                                <div class="feedback-text">
-                                    <div class="feedback-name">Константин Спилберг</div>
-                                    <div class="feedback-description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
-                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                                        расплавленным.
-                                    </div>
-                                    <form action="#" class="feedback-form-button">
-                                        <button class="feedback-button"> Подробнее</button>
-                                        <div class="button-more"></div>
-                                    </form>
-                                </div>
-                            </li>
-                            <li class="feedback-item feedback-item__7">
-                                <img src="./pictures/backgrounds/feedback/7.jpg" alt="Константин Спилберг" class="visuallyhidden">
-                                <div class="feedback-text">
-                                    <div class="feedback-name">Константин Спилберг</div>
-                                    <div class="feedback-description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
-                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                                        расплавленным.
-                                    </div>
-                                    <form action="#" class="feedback-form-button">
-                                        <button class="feedback-button"> Подробнее</button>
-                                        <div class="button-more"></div>
-                                    </form>
-                                </div>
-                            </li>
-                            <li class="feedback-item feedback-item__8">
-                                <img src="./pictures/backgrounds/feedback/8.jpg" alt="Константин Спилберг" class="visuallyhidden">
-                                <div class="feedback-text">
-                                    <div class="feedback-name">Константин Спилберг</div>
-                                    <div class="feedback-description">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда
-                                        не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким
-                                        расплавленным.
-                                    </div>
-                                    <form action="#" class="feedback-form-button">
-                                        <button class="feedback-button"> Подробнее</button>
-                                        <div class="button-more"></div>
-                                    </form>
                                 </div>
                             </li>
                         </ul>
                     </div>
-            </section>
-            <section class="section section__orderform">
-                <div class="container">
                 </div>
             </section>
-            <section class="section section__map">
-                <div class="container">
-                    <footer class="footer">
-                    </footer>
+            <section class="section menu">
+                <div class="container container_menu ">
+                    <h2 class="section-title section-title_color_white">Меню</h2>
+                    <ul class="menu-accordeon">
+                        <li class="menu-accordeon__item ">
+                            <div class="menu-accordeon-title menu-accordeon-title_1">
+                                <a class="menu-accordeon-title__trigger ">Для мясоедов</a>
+                            </div>
+                            <div class="menu-accordeon__text">
+                                <p> Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+                                    конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
+                                    Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+                                    Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает
+                                    метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                    редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
+                                    анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu-accordeon__item ">
+                            <div class="menu-accordeon-title menu-accordeon-title_2">
+                                <a class="menu-accordeon-title__trigger ">Вегетарианская</a>
+                            </div>
+                            <div class="menu-accordeon__text">
+                                <p> Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+                                    конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
+                                    Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+                                    Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает
+                                    метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                    редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
+                                    анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="menu-accordeon__item ">
+                            <div class="menu-accordeon-title menu-accordeon-title_3">
+                                <a class="menu-accordeon-title__trigger ">Диетическое</a>
+                            </div>
+                            <div class="menu-accordeon__text">
+                                <p> Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует
+                                    конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман.
+                                    Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив.
+                                    Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает
+                                    метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                    редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
+                                    анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+
+
                 </div>
             </section>
-            </div>
+            <section class="section feedback">
+                <h2 class="section-title section-title_color_white  section-title_feedback  visuallyhidden ">Отзывы</h2>
+                <ul class="feedback-items">
+                    <li class="feedback-item " style="background-image:url(/pictures/backgrounds/feedback/1.jpg)">
+                        <div class=" feedback-pic">
+                            <img src="./pictures/backgrounds/feedback/1.jpg" alt="Константин Спилберг" class="visuallyhidden">
+                        </div>
+                        <div class="feedback-text">
+                            <div class="feedback-text__name">Константин Спилберг</div>
+                            <div class="feedback-text__description">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback-button">
+                                <button class="feedback-button__button"> Подробнее</button>
+                                <div class="feedback-button__more"></div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="feedback-item " style="background-image:url(/pictures/backgrounds/feedback/2.jpg)">
+                        <div class=" feedback-pic">
+                            <img src="./pictures/backgrounds/feedback/2.jpg" alt="Константин Спилберг" class="visuallyhidden">
+                        </div>
+                        <div class="feedback-text">
+                            <div class="feedback-text__name">Константин Спилберг</div>
+                            <div class="feedback-text__description">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback-button">
+                                <button class="feedback-button__button"> Подробнее</button>
+                                <div class="feedback-button__more"></div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="feedback-item " style="background-image:url(/pictures/backgrounds/feedback/3.jpg)">
+                        <div class=" feedback-pic">
+                            <img src="./pictures/backgrounds/feedback/3.jpg" alt="Константин Спилберг" class="visuallyhidden">
+                        </div>
+                        <div class="feedback-text">
+                            <div class="feedback-text__name">Константин Спилберг</div>
+                            <div class="feedback-text__description">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback-form-button">
+                                <button class="feedback-button__button"> Подробнее</button>
+                                <div class="feedback-button__more"></div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="feedback-item  " style="background-image:url(/pictures/backgrounds/feedback/4.jpg)">
+                        <div class=" feedback-pic">
+                            <img src="./pictures/backgrounds/feedback/4.jpg" alt="Константин Спилберг" class="visuallyhidden">
+                        </div>
+                        <div class="feedback-text">
+                            <div class="feedback-text__name">Константин Спилберг</div>
+                            <div class="feedback-text__description">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback-form-button">
+                                <button class="feedback-button__button"> Подробнее</button>
+                                <div class="feedback-button__more"></div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="feedback-item " style="background-image:url(/pictures/backgrounds/feedback/5.jpg)">
+                        <div class=" feedback-pic">
+                            <img src="./pictures/backgrounds/feedback/5.jpg" alt="Константин Спилберг" class="visuallyhidden">
+                        </div>
+                        <div class="feedback-text">
+                            <div class="feedback-text__name">Константин Спилберг</div>
+                            <div class="feedback-text__description">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback-form-button">
+                                <button class="feedback-button__button"> Подробнее</button>
+                                <div class="feedback-button__more"></div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="feedback-item " style="background-image:url(/pictures/backgrounds/feedback/6.jpg)">
+                        <div class=" feedback-pic">
+                            <img src="./pictures/backgrounds/feedback/6.jpg" alt="Константин Спилберг" class="visuallyhidden">
+                        </div>
+                        <div class="feedback-text">
+                            <div class="feedback-text__name">Константин Спилберг</div>
+                            <div class="feedback-text__description">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback-form-button">
+                                <button class="feedback-button__button"> Подробнее</button>
+                                <div class="feedback-button__more"></div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="feedback-item " style="background-image:url(/pictures/backgrounds/feedback/7.jpg)">
+                        <div class=" feedback-pic">
+                            <img src="./pictures/backgrounds/feedback/7.jpg" alt="Константин Спилберг" class="visuallyhidden">
+                        </div>
+                        <div class="feedback-text">
+                            <div class="feedback-text__name">Константин Спилберг</div>
+                            <div class="feedback-text__description">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback-form-button">
+                                <button class="feedback-button__button"> Подробнее</button>
+                                <div class="feedback-button__more"></div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="feedback-item " style="background-image:url(/pictures/backgrounds/feedback/8.jpg)">
+                        <div class=" feedback-pic">
+                            <img src="./pictures/backgrounds/feedback/8.jpg" alt="Константин Спилберг" class="visuallyhidden">
+                        </div>
+                        <div class="feedback-text">
+                            <div class="feedback-text__name">Константин Спилберг</div>
+                            <div class="feedback-text__description">
+                                <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
+                                    что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
+                                </p>
+                            </div>
+                            <form action="#" class="feedback-form-button">
+                                <button class="feedback-button__button"> Подробнее</button>
+                                <div class="feedback-button__more"></div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </section>
+            <section class="section orderform">
+                <div class="container container_orderform ">
+                    <h2 class="section-title section-title_position_center section-title_orderform">Закажите доставку</h2>
+                    <div class="form">
+                        <form class="form__element">
+                            <div class="form__content">
+                                <div class="form__column">
+                                    <div class="form__row">
+                                        <label class="form__block">
+                                            <div class="form__block-title">Имя</div>
+                                            <input type="text" class="form__input">
+                                        </label>
+                                        <label class="form__block">
+                                            <div class="form__block-title">Телефон</div>
+                                            <input type="text" class="form__input">
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label class="form__block">
+                                            <div class="form__block-title">Улица</div>
+                                            <input type="text" class="form__input">
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label class="form__block">
+                                            <div class="form__block-title">Дом</div>
+                                            <input type="text" class="form__input">
+                                        </label>
+                                        <label class="form__block">
+                                            <div class="form__block-title">Корпус</div>
+                                            <input type="text" class="form__input">
+                                        </label>
+                                        <label class="form__block">
+                                            <div class="form__block-title">Квартира</div>
+                                            <input type="text" class="form__input">
+                                        </label>
+                                        <label class="form__block">
+                                            <div class="form__block-title">Этаж</div>
+                                            <input type="text" class="form__input">
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form__column">
+                                    <div class="form__row form__row_textarea">
+                                        <label class="form__block">
+                                            <div class="form__block-title">Комментарий</div>
+                                            <textarea class="form__textarea"></textarea>
+                                        </label>
+                                    </div>
+
+                                    <div class="form__row form__row_pay">
+                                        <div class="form__pay">
+                                            <input type="radio" name="payable" id="small-change" value="yes" class="form__pay-element visuallyhidden">
+                                            <label for="small-change" class="form__block-title form__block-title_pay">Потребуется сдача</label>
+                                            <input type="radio" name="payable" id="credit-card" value="no" class="form__pay-element visuallyhidden">
+                                            <label for="credit-card" class="form__block-title form__block-title_pay">Оплата по карте</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__row form__row_call">
+                                        <div class="form__call">
+                                            <input type="checkbox" name="callback" id="callback" value="no" class="form__call-element visuallyhidden">
+                                            <label for="callback" class="form__block-title form__block-title_call">Не перезванивать</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form__row">
+                                        <label class="form__button">
+                                            <input type="submit" class="form__input form__input_button-submit" value="Заказать">
+                                        </label>
+                                        <label class="form__button">
+                                            <input type="reset" class="form__input form__input_button-reset" value="Очистить">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section map">
+                <h2 class="section-title section-title_color_black visuallyhidden ">Контакты</h2>
+                <footer class="footer">
+                    <div class="container container_map">
+                        <div class="footer__content">
+                            <div class="footer__column">
+                                <div class="footer__contacts">
+                                    <div class="footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                                    <div class="footer__mobile">
+                                        <a href="tel:+78123771377" class="footer__phone">
+                                            <svg class="footer__mobile-icon">
+                                                <use xlink:href="pictures/icons/sprite/sprite.svg#phone" />
+                                            </svg>
+                                            +7 (812) 377-13-77</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__column">
+                                <div class="footer__socials">
+                                    <ul class="socials">
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="pictures/icons/sprite/sprite.svg#vk" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="pictures/icons/sprite/sprite.svg#fb" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="pictures/icons/sprite/sprite.svg#inst" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="socials__item">
+                                            <a href="#" class="socials__link">
+                                                <svg class="socials__icon">
+                                                    <use xlink:href="pictures/icons/sprite/sprite.svg#twitter" />
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </section>
         </div>
+    </div>
+
+    <aside class="pagination">
+        <ul class="pagination-list">
+            <li class="pagination-item pagination-item_active">
+                <a href="#" class="pagination-item__link "></a>
+            </li>
+            <li class="pagination-item ">
+                <a href="#" class="pagination-item__link"></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link"></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link"></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link"></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link"></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link"></a>
+            </li>
+            <li class="pagination-item">
+                <a href="#" class="pagination-item__link"></a>
+            </li>
+        </ul>
+    </aside>
 </body>
 
 </html>

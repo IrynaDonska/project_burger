@@ -1,35 +1,32 @@
-.section__we-best{
+.we-best{
     background-image: url("./../pictures/backgrounds/webest.jpg");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size:  cover;
     display: flex;
-    justify-content: center;
     align-items: center;
 
 
-    .container__we-best {
+
+    .container_we-best {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
     }
 }
 
 
 
-.we-best__title {
-    @include h1;
-    color: #2f3234;
-    display: flex;
-    justify-content: center;
-    margin-top: 12%;
+
+
+.section-title_color_black {
     margin-bottom: 15.6%;
     
 }
 
-.we-best__reason {
+.reasons-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,10 +36,16 @@
         width: 33.3334%;
         text-align: center;
         align-self: baseline;
+        margin-right: rem(30);
+
+        &:last-child {
+            margin-right: rem(0);
+        }
 
 
         &__img {
-            margin-bottom: 35px;
+            margin-bottom: 30px;
+
         }
 
         &__title {
@@ -50,24 +53,26 @@
             font-family: 'lifehackmedium';
             font-weight: normal;
             font-style: normal;
-            font-size: 24.1px;
+            font-size: rem(24.1);
             line-height: 1.1664em;
             letter-spacing: -0.025em;
-            color: #2f3234;
+            color: $dark;
             white-space: pre-line;
-            margin-bottom: 30px;
+            margin-bottom: rem(10);
+            
         }
 
         &__description {
             font-family: 'ubuntulight';
             font-weight: normal;
             font-style: normal;
-            font-size: 14.03px;
+            font-size: rem(14.03);
             line-height: 1.7142em;
-            color: #2f3234;
+            color: $dark;
         }
     }
 }
+
 
 
 

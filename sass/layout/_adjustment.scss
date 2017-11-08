@@ -1,29 +1,37 @@
 .wrapper {
-    width: 100%; 
-    height: 100%;
     position: relative;
+    width: 100%;
+    /*min-width: rem(960);*/
+    min-height: 100%;
+    overflow: hidden;
 }
+
+
   
 .maincontent {
     height: 100%;
-    min-height: 650px;
+    min-height: rem(650);
 }
+
   
+
 .container {
-    width: 940px;
-    margin: 0 auto;
+    width: 95%;
+    max-width: rem(940);
+    margin: rem(0) auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+
 }
   
+
 .section {
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0,0,0,0.31);
-    min-width: 940px;
-    min-height: 650px;
+    min-width: rem(940);
+    min-height: rem(650);
 }
+
 
 
 a {
@@ -36,15 +44,46 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: rem(0);
   font-weight: normal;
 }
 
 
-button {
+button, input, textarea {
     outline: none;
 
     &:active{
         outline: none;
     }
 }
+
+input:focus,  textarea:focus {
+    border: rem(1) solid $orange;
+}
+
+
+.section-title {
+    @include gagalin-title;
+
+    &_color {
+        &_black {
+            color: $dark;
+        }
+
+        &_white {
+            color: $white;
+
+        }
+    }
+
+    &_position {
+        
+        &_center{
+            text-align: center;
+        }
+    }
+}
+
+
+
+

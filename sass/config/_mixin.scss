@@ -1,26 +1,35 @@
-@mixin h1 {
+@mixin gagalin-title {
     font-family: 'gagalinregular';
     font-weight: normal;
     font-style: normal;
-    font-size: 72px;
+    font-size: rem(72);
     line-height: 1.18em;
     text-transform: uppercase;
-    color: #f9b43b; 
+    color: $yellow ; 
 }
 
 
-@mixin button-text {
+@mixin order-button {
     font-family: 'ubuntumedium';
     font-weight: normal;
     font-style: normal;
     text-transform: uppercase ;
-    font-size: 13px;
+    font-size: rem(13);
     line-height: 2.69em;
-    color: #ffffff;
-    background: #e45028;
-    border-radius: 3px;
+    color: $white;
+    background: $orange ;
+    border-radius: rem(3);
     border: none;
-    height: 35px;
-    width: 97px;
+    height: rem(35);
+    width: rem(97);
     cursor: pointer;
 }
+
+@function rem($px) {
+    @return ($px/16)+rem;
+}
+
+
+
+
+

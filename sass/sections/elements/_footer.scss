@@ -1,0 +1,93 @@
+
+.footer {
+    background: url("./../pictures/backgrounds/footer.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: rem(0);
+    bottom: rem(0);
+    width: 100%;
+    height: rem(58) ;
+    display: flex;
+    
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__column {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    &__contacts {
+        font-family: 'ubuntulight';
+        font-weight: normal;
+        font-style: normal;
+        font-size: rem(14);
+        line-height: 1.71em;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__adress {
+        margin-bottom: rem(5);
+        
+    }
+
+    &__mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        
+
+
+    }
+
+    &__phone {
+        font-family: 'ubuntubold';
+        color: $orange;
+    }
+    
+
+    &__socials {
+        display: flex;
+        justify-content: flex-end;
+        
+
+    }
+    
+
+}
+
+
+.socials {
+    display: flex;
+    
+    
+    &__item {
+        margin-right: rem(20);
+
+        &:last-child {
+            margin-right: rem(0);
+        }
+
+    }
+
+    &__link {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+

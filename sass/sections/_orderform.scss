@@ -1,0 +1,188 @@
+.orderform {
+    background: url("./../pictures/backgrounds/order.jpg") center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-title_orderform {
+    margin-top: rem(80);
+    margin-bottom: rem(70);
+
+}
+
+
+
+.form {
+
+    &__content {
+        display: flex;
+    }
+
+    &__column {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: rem(15);
+
+        &_textarea {
+            margin-bottom: rem(8); 
+        }
+
+        &_pay {
+            margin-bottom: rem(19);
+        }
+
+    }
+    
+    &__block {
+        flex: 1;
+        margin-right: rem(20);
+
+
+
+        &-title {
+            color: $white;
+            margin-bottom: rem(5);
+
+        }
+
+    }
+
+
+
+   &__input {
+       border: none;
+       border-radius: rem(3);
+       padding: rem(10) rem(10);
+       width: 100%;
+       height: rem(35);
+
+
+       
+
+   }
+
+    &__textarea {
+        border: none;
+        border-radius: rem(3);
+        padding: rem(10) rem(10);
+        resize: none;
+        width: 100%;
+        height: rem(114);
+
+
+    }
+
+    &__block-title_pay {
+        margin-right: rem(15);
+        padding-left: rem(25);
+        position: relative;
+        cursor: pointer;
+
+
+        &::before {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+            width: rem(15);
+            height: rem(15);
+            background: $white;
+            left: rem(0);
+            top: rem(2.5);
+
+        }
+
+
+        &::after {
+            position: absolute;
+            display: block;
+            content: unset;
+            width: rem(7);
+            height: rem(7);
+            border-radius: 50%;
+            background: $orange;
+            top: rem(6.5);
+            left: rem(4.5); 
+
+        }
+    }
+
+
+
+
+    &__block-title_call {
+        padding-left: rem(25);
+        position: relative;
+        cursor: pointer;
+
+
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: rem(15);
+            height: rem(15);
+            background: $white;
+            left: rem(0);
+            top: rem(2.5);
+            margin-right: rem(20);
+
+        }
+
+
+        &::after {
+            position: absolute;
+            display: block;
+            
+            color: $orange;
+            top: rem(-1);
+            left: rem(2.5); 
+
+        }
+    }
+
+
+
+    &__button {
+        margin-right: rem(10);
+    }
+
+    &__input_button-submit {
+        @include order-button;
+        line-height: 0em;
+    }
+
+    &__input_button-reset {
+        @include order-button;
+        line-height: 0em;
+        background: transparent;
+
+    }
+
+}
+
+
+
+
+.form__pay-element:checked + .form__block-title_pay:after{
+  content: "";
+}
+
+.form__call-element:checked + .form__block-title_call:after{
+    content: "\2714";
+    
+  }
+
+  
+
+
+
+
+

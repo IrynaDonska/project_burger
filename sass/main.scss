@@ -1,11 +1,33 @@
+//resolutions
+$tablet: 768px;
+$phone:  480px;
+
+// colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$white: #ffffff;
+$dark: #2f3234;
+$dark-orange: #c1401e;
+
+
+
 //config
-@import "config/_variables";
 @import "config/_mixin";
+@import "config/_variables";
+
 
 //layout
-@import "layout/_adjustment";
+@import "layout/_media";
 @import "layout/_base";
+@import "layout/_adjustment";
 @import "layout/_fonts";
+@import "layout/_sprite";
+
+
+//elements
+@import "sections/elements/_footer";
+@import "sections/elements/_pagination";
+@import "sections/elements/_header";
 
 //sections
 @import "sections/_burgers";
@@ -17,7 +39,11 @@
 @import "sections/_we-best";
 @import "sections/_welcomeview";
 
-//elements
-@import "sections/elements/_footer";
-@import "sections/elements/_pagination";
-@import "sections/elements/_header";
+
+
+
+
+
+
+
+

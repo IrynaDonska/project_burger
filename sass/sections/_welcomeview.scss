@@ -1,23 +1,17 @@
-.section__welcome-view {
-    background-image: url("./../pictures/backgrounds/first-texture.png"), url("./../pictures/backgrounds/welcome.jpg");
-    background-position: top right, center bottom;
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
+.welcome-view {
+    background: url("./../pictures/backgrounds/welcome.jpg") center center no-repeat;
+    background-size: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
 
-    .container__welcome-view {
-        height: 100%;
+    .container_welcome-view {
+        flex: 1;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
     }
-
 }
 
-
-.welcome-burger {
+.welcome-content {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -25,16 +19,23 @@
     align-items: center;
     margin-bottom: 15.3%;
 
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-    .welcome-burger-pic {
-        position: relative;
-        width: 451px;
-        height: 420px;
+    .welcome-pic {
+        width: rem(451);
+        height: rem(420);
         overflow: hidden;
-        background: url("./../pictures/icons/drops.svg") 0 65px no-repeat;
-        margin-left: 15px;
-        padding: 0 0 0 40px;
-        margin-right: 12px;
+        margin-right: rem(12);
+        margin-left: rem(15);
+
+        @include tablet {
+            margin-right: rem(0);
+        }
+        
         
         &__img {
             width: 100%;
@@ -42,20 +43,22 @@
         }  
     }
 
-    .welcome-title {
-        width: 460px;
+    .welcome-text {
+        width: rem(460);
 
-        .we-make {
-           @include h1; 
-           margin-top: 70px;
-           margin-bottom: 20px;
+        .section-title {
+           margin-top: rem(70);
+           margin-bottom: rem(20);
         }
+
         
-        .natural-burgers {
+        
+
+        .welcome__description {
             font-family: 'lifehackmedium';
             font-weight: normal;
             font-style: normal;
-            font-size: 65px;
+            font-size: rem(65);
             line-height: 0.92em;
             text-transform: lowercase;
             letter-spacing: -0.029em;
@@ -72,8 +75,8 @@
     
     &__img {
         background: url("./../pictures/icons/arrow-scroll.svg") center center no-repeat;
-        width: 30px;
-        height: 15px;
+        width: rem(30);
+        height: rem(15);
     }
     
 }
