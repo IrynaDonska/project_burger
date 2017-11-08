@@ -22,24 +22,25 @@
 
 }
 
+
 .reason__img-sprite {
+  width: rem(100);
+  height: rem(100);
+  
 
   &_meat{
     fill: $orange;
-    width: rem(97);
-    height: rem(89);
+    
   }
 
   &_hand {
     fill: #f8b43a;
-    width: rem(73);
-    height: rem(85);
+    
   }
 
   &_natural {
     fill: #8ac03e;
-    width: rem(88);
-    height: rem(75);
+    
   }
 
 }

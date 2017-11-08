@@ -14,6 +14,20 @@
         bottom: rem(0);
         display: flex;
         flex-direction: row;
+
+        @include tablet {
+            position: relative;
+            width: 100%;
+            top: rem(0);
+            right: rem(0);
+            bottom: rem(0);
+            left: rem(0);
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            
+
+        }
         
     }
 }
@@ -26,14 +40,32 @@
     margin-top: rem(73);
     margin-right: rem(115);
 
+    @include tablet {
+        margin-left: rem(186);
+        margin-top: rem(123);
+        margin-right: rem(186);
+   
+    }
+
+    @include phone {
+        margin-left: rem(60);
+        margin-top: rem(66);
+        margin-right: rem(60);
+    }
+
 }
-
-
-
 
 
 .section-title_team {
     margin-bottom: rem(65);
+
+    @include tablet {
+        margin-bottom: rem(128);
+    }
+
+    @include phone {
+        margin-bottom: rem(100);
+    }
 
 }
 
@@ -42,6 +74,16 @@
     margin-bottom: 6.15%;
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+        margin-bottom: rem(30);
+        align-items: center;
+
+    }
+
+    @include phone {
+        margin-bottom: rem(40);
+    }
 
 
     .team-accordeon__trigger {
@@ -66,6 +108,11 @@
 
         }
 
+        @include tablet {
+            font-size: rem(24.4);
+            line-height: 1.166em;
+        }
+
     }
 
     
@@ -75,6 +122,11 @@
         flex-direction: row;
         height: rem(0);
         overflow: hidden;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
 
         
         .team-accordeon__pic {
@@ -93,6 +145,12 @@
                 max-height: rem(100);
     
             }
+
+            @include tablet {
+                margin-left: rem(0);
+                margin-right: rem(0); 
+                margin-bottom: rem(20);
+            }
         }
 
         .team-accordeon__description {
@@ -106,6 +164,10 @@
             &-position {
                 font-family: 'ubuntubold';
                 margin-bottom: 2.3%;
+
+                @include tablet {
+                    margin-bottom: rem(20);
+                }
 
             }
         }

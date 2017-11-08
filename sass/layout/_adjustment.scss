@@ -28,7 +28,7 @@
 .section {
     height: 100vh;
     background-color: rgba(0,0,0,0.31);
-    min-width: rem(940);
+    //min-width: rem(940);
     min-height: rem(650);
 }
 
@@ -64,6 +64,11 @@ input:focus,  textarea:focus {
 
 .section-title {
     @include gagalin-title;
+
+    @include phone {
+        font-size: rem(50);
+        line-height: 1.2em;
+    }
 
     &_color {
         &_black {

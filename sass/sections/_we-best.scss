@@ -12,25 +12,41 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 }
 
 
 
-
-
 .section-title_color_black {
+    margin-top: 12.31%;
     margin-bottom: 15.6%;
     
+    @include tablet {
+        margin-top: 12.21%;
+        margin-bottom: 17.09%;
+    }
+
+    @include phone {
+        margin-top: 7.25%;
+        margin-bottom: 10.625%;
+    }
 }
+
 
 .reasons-list {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+
+    @include phone {
+        flex-direction: column;
+        margin-left: 4.17%;
+        margin-right: 2.09%;
+        
+
+    }
 
     .reason {
         width: 33.3334%;
@@ -42,11 +58,27 @@
             margin-right: rem(0);
         }
 
+       @include phone {
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+            width: 100%;
+            margin-right: rem(0);
+            text-align: left;
+            margin-bottom: 6.875%;
+       }
+
+
 
         &__img {
             margin-bottom: 30px;
+            
 
+            @include phone {
+                margin-right: 6.25%;
+            }
         }
+
 
         &__title {
 
@@ -59,6 +91,10 @@
             color: $dark;
             white-space: pre-line;
             margin-bottom: rem(10);
+
+            @include phone {
+                margin-bottom: rem(23);
+            }
             
         }
 

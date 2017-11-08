@@ -11,6 +11,7 @@
     }
 }
 
+
 .welcome-content {
     width: 100%;
     display: flex;
@@ -23,19 +24,37 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-bottom: 14.7%;
+        padding-left: rem(135);
+        padding-right:  rem(135);
     }
 
+    @include phone {
+        justify-content: center;
+        margin-bottom: 8.75%;
+        padding-left: rem(47);
+        padding-right:  rem(47);
+    }  
+
+   
     .welcome-pic {
-        width: rem(451);
-        height: rem(420);
+        width: 42%;
+        height: 100%;
         overflow: hidden;
-        margin-right: rem(12);
-        margin-left: rem(15);
+        margin-right: 1.09%;
+        margin-left: 1.37%;
 
         @include tablet {
-            margin-right: rem(0);
+            width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 3.9%;
+
         }
-        
+
+        @include phone {
+            margin-bottom: 6.25%;
+        }
         
         &__img {
             width: 100%;
@@ -44,14 +63,28 @@
     }
 
     .welcome-text {
-        width: rem(460);
+        width: 55%;
 
-        .section-title {
-           margin-top: rem(70);
-           margin-bottom: rem(20);
+        @include tablet {
+            width: 100%;
         }
 
-        
+        .section-title_welcome {
+            margin-top: rem(70);
+            margin-bottom: rem(20);
+
+           @include tablet {
+            margin-top: rem(0);
+            margin-bottom: rem(40);
+           }
+
+           @include phone {
+                margin-bottom: rem(20); 
+                font-size: rem(63);
+                line-height: 0.9524em;
+           }
+        }
+
         
 
         .welcome__description {
@@ -59,10 +92,17 @@
             font-weight: normal;
             font-style: normal;
             font-size: rem(65);
-            line-height: 0.92em;
+            line-height: 1.3077em;
             text-transform: lowercase;
             letter-spacing: -0.029em;
             color: #ffffff; 
+
+            @include phone {
+                font-size: rem(54);
+                letter-spacing: -0.025em;
+                line-height: 1.11em;
+            }
+
         }
     } 
 }
@@ -72,6 +112,14 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 6.15%;
+
+    @include tablet {
+        margin-bottom: 3.9%;
+    }
+
+    @include phone {
+        margin-bottom: 3.75%;
+    }
     
     &__img {
         background: url("./../pictures/icons/arrow-scroll.svg") center center no-repeat;
