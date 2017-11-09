@@ -1,12 +1,10 @@
 
-
 .section-title_feedback { 
     position: absolute;
     z-index: 1;
     left: 40%;
     
 }
-
 
 
 .feedback-items {
@@ -25,6 +23,12 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include tablet {
+            width: 50%;
+            height: 25%;
+            
+        }
 
 
         .feedback-pic {
@@ -73,14 +77,38 @@
             margin: 15.3% 10.8% 9.33% 6.15%;
             opacity: 0;
             z-index: 2;
-            
+
+            @include tablet {
+                //margin: 3.42% 10.42% 1.95% 10.42% ;
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+
+            @include phone {
+                //margin: 5.63% 11.45% 5.63% 11.45% ;
+                
+            }
+    
 
             &__name {
                 @include gagalin-title;
                 font-size: rem(14);
                 line-height: 2.0079em;
                 color: $white ;
-                margin-bottom: rem(30);
+                margin-bottom: 4.61%;
+
+                @include tablet {
+                    margin-bottom: 1.9531%; 
+    
+                }
+
+                @include phone {
+                    font-size: rem(24);
+                    line-height: 1.17em;
+                    margin-bottom: 4.375%; 
+    
+                }
             }
             
 
@@ -90,8 +118,18 @@
                 font-style: normal;
                 font-size: rem(14);
                 line-height: 1.7143em;
-                margin-bottom: rem(17);
+                margin-bottom: 2.6154%;
+
+                @include tablet {
+                    margin-bottom: 2.9297%; 
+                }
+
+                @include phone {
+                    display: none;
+                    
+                }
             }
+
 
             .feedback-button__button {
                 @include order-button;
@@ -101,6 +139,11 @@
                 &:hover {
                     background: #1f2122;
                     transition: 0.5s;
+                }
+
+                @include phone {
+                    width: rem(130);
+                    
                 }
             }
         }

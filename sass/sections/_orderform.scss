@@ -7,8 +7,18 @@
 }
 
 .section-title_orderform {
-    margin-top: rem(80);
-    margin-bottom: rem(70);
+    margin-top:  12.3%;
+    margin-bottom: 10.77%;
+
+    @include tablet {
+        margin-top:  11.92%;
+        margin-bottom: 6.84%; 
+    }
+
+    @include phone {
+        margin:  8.5%  19.8% 2.75% 19.8%;
+        
+    }
 
 }
 
@@ -18,6 +28,20 @@
 
     &__content {
         display: flex;
+
+        @include tablet {
+            flex-direction: column;
+            margin-left: 16.14%;
+            margin-right: 16.14%;
+
+        }
+
+        @include phone {
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+   
     }
 
     &__column {
@@ -25,7 +49,12 @@
         width: 50%;
         flex-direction: column;
         
+        @include tablet {
+            width: 100%;
+        }
     }
+
+
 
     &__row {
         display: flex;
@@ -33,18 +62,69 @@
 
         &_textarea {
             margin-bottom: rem(8); 
+
+            @include phone {
+                margin-bottom: rem(40); 
+            }
         }
 
         &_pay {
             margin-bottom: rem(19);
+
+            @include phone {
+                margin-bottom: rem(40); 
+                justify-content: center;
+            }
+
+        }
+
+        &_call {
+            @include tablet {
+                margin-bottom: rem(40);
+                
+            }
+
+            @include phone {
+                justify-content: center;
+            }  
+        }
+
+        &_button {
+            @include phone {
+                justify-content: center;
+            }  
         }
 
     }
+
+
+
     
     &__block {
         flex: 1;
         margin-right: rem(20);
 
+        &:last-child {
+
+            @include tablet {
+                margin-right: rem(0);
+    
+            }
+        }
+
+        &_flat {
+            @include phone {
+                margin-right: rem(0);
+    
+            }
+        }
+
+        &_floor {           
+
+            @include phone {
+                display: none;
+            }
+        }
 
 
         &-title {
@@ -63,10 +143,6 @@
        padding: rem(10) rem(10);
        width: 100%;
        height: rem(35);
-
-
-       
-
    }
 
     &__textarea {
@@ -76,8 +152,6 @@
         resize: none;
         width: 100%;
         height: rem(114);
-
-
     }
 
     &__block-title_pay {
@@ -150,19 +224,39 @@
 
 
 
+
+
     &__button {
         margin-right: rem(10);
+
+       
     }
 
     &__input_button-submit {
         @include order-button;
         line-height: 0em;
+
+        &:hover {
+            background: $dark-orange;
+            transition: 0.5s;
+        }
+
+       
     }
 
     &__input_button-reset {
         @include order-button;
         line-height: 0em;
         background: transparent;
+        
+        &:focus {
+            border: none;
+        }
+
+        &:hover {
+            background: $dark-orange;
+            transition: 0.5s;
+        }
 
     }
 

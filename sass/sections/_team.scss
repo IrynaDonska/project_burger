@@ -36,28 +36,28 @@
 
 
 .team-content {
-    margin-left: rem(80);
-    margin-top: rem(73);
-    margin-right: rem(115);
+    margin-left: 7.2727%;
+    margin-top: 11.2308%;
+    margin-right: 10.4545%;
 
     @include tablet {
-        margin-left: rem(186);
-        margin-top: rem(123);
-        margin-right: rem(186);
+        margin-left: 24.2187%;
+        margin-top: 12.0117%;
+        margin-right: 24.2187%;
    
     }
 
     @include phone {
-        margin-left: rem(60);
-        margin-top: rem(66);
-        margin-right: rem(60);
+        margin-left: 12.5%;
+        margin-top: 8.25;
+        margin-right: 12.5%;
     }
 
 }
 
 
 .section-title_team {
-    margin-bottom: rem(65);
+    margin-bottom: rem(90);
 
     @include tablet {
         margin-bottom: rem(128);
@@ -71,14 +71,13 @@
 
 
 .team-accordeon__item {
-    margin-bottom: 6.15%;
+    margin-bottom: rem(35);
     display: flex;
     flex-direction: column;
 
     @include tablet {
         margin-bottom: rem(30);
         align-items: center;
-
     }
 
     @include phone {
@@ -120,7 +119,7 @@
     .team-accordeon__text {
         display: flex;
         flex-direction: row;
-        height: rem(0);
+        height: 0;
         overflow: hidden;
 
         @include tablet {

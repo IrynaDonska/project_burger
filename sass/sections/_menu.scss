@@ -1,15 +1,24 @@
 .menu {
     background: url("./../pictures/backgrounds/menu.jpg") center center no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     position: relative;
       
 }
 
 .section-title_color_white {
-    margin-top: rem(80);
-    margin-left: rem(12);
+    position: absolute;
+    top: 17%;
+    left: 8.63%;
+
+    @include tablet {
+        top: 11.23%;
+        left: 3.26%;
+    }
+
+    @include phone {
+        top: 7.5%;
+        left: 12.5%;
+    }
 }
 
 
@@ -22,50 +31,45 @@ top: rem(0);
 right: rem(0);
 bottom: rem(0);
 
+@include tablet {
+    top: rem(0);
+    left: rem(0);
+    bottom: rem(0); 
+    
+}
+
+@include phone {
+    top: rem(0);
+    left: rem(0);
+    bottom: rem(0);
+    
+}
 
 
     &__item {
-        width: rem(80);
-        min-height: 100vh ;
-        color: $white;
+        height: 100%;
         display: flex;
-        flex-direction: row;
-        background-color: $dark;
-        opacity: 0.93;
-       
-        
+        flex-direction: row;         
+
+    
     }
 
-    .menu-accordeon-title {
+
+
+    &__trigger {
         width: rem(80);
-        height:100%;
-        overflow: hidden ;
-        writing-mode: vertical-lr;
+        height: 100%;
         display: flex;
+        text-decoration: none;
+        position: relative;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        writing-mode: vertical-lr;
 
+    
 
-
-        &_1 {
-            background: url("./../pictures/backgrounds/menu/1.jpg") center center no-repeat;
-            background-size: cover;
-            
-        }
-        
-        &_2 {
-            background: url("./../pictures/backgrounds/menu/2.jpg") center center no-repeat;
-            background-size: cover;
-
-        }
-
-        &_3 {
-            background: url("./../pictures/backgrounds/menu/3.jpg") center center no-repeat;
-            background-size: cover;
-
-        }
-       
-
-
-        &__trigger {
+        &-title {
             @include gagalin-title;
             font-size: rem(40);
             line-height: 1.6em;
@@ -74,34 +78,81 @@ bottom: rem(0);
             margin: auto;
             transform: rotate(180deg);
 
+            @include tablet {
+                margin-bottom: rem(40);
+            }
 
-            
+            @include phone {
+                margin-bottom: rem(60); 
+            }
+
         }
+    }
+
+   
+
+    &__text{
+        height: 100%;
+        width: 0;
+        overflow: hidden;
+        background-color: $dark;
+        opacity: 0.93;
+        display:flex ;
+        
 
     }
 
-
-    &__text{
+    &__paragraph {
         font-family: 'ubuntulight';
         font-weight: normal;
         font-style: normal;
         font-size: rem(14);
         line-height: 1.71em;
-        width: rem(0);
-        overflow: hidden;
+        color: $white;
+        width: 100%;
+        padding: 9.23% 2.73%;
+        display: none;
 
+        @include tablet {
+            padding: 5.9% 3.9%;
+        }
+       
+
+        @include phone {
+            padding: 7.5% 8.34%;
+        }
+        
 
     }
 }
 
+
+
+
 .menu-accordeon__item_active {
-    
-        .menu-accordeon__text {
-        margin: rem(60) rem(35) ;
-        width: rem(540); 
+
+    .menu-accordeon__trigger-title {
+        color: $yellow;
+    }
+                    
+    .menu-accordeon__text {
+        width: rem(540);
+        
+        @include tablet {
+            width: rem(530);
         }
+        
+        @include phone {
+            width: rem(400); 
+        }
+    }
+
+    .menu-accordeon__paragraph {
+        display: flex;
+    }
     
 }
+
 
 
 
