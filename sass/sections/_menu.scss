@@ -32,18 +32,16 @@ right: rem(0);
 bottom: rem(0);
 
 @include tablet {
-    top: rem(0);
-    left: rem(0);
-    bottom: rem(0); 
+    
     
 }
 
 @include phone {
-    top: rem(0);
-    left: rem(0);
-    bottom: rem(0);
+    
     
 }
+
+
 
 
     &__item {

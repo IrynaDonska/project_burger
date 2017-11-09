@@ -13,10 +13,12 @@
         right: rem(0);
         bottom: rem(0);
         display: flex;
-        flex-direction: row;
+        align-items: center;
+        flex-direction: column;
+
+
 
         @include tablet {
-            position: relative;
             width: 100%;
             top: rem(0);
             right: rem(0);
@@ -39,6 +41,7 @@
     margin-left: 7.2727%;
     margin-top: 11.2308%;
     margin-right: 10.4545%;
+
 
     @include tablet {
         margin-left: 24.2187%;
@@ -72,8 +75,11 @@
 
 .team-accordeon__item {
     margin-bottom: rem(35);
-    display: flex;
-    flex-direction: column;
+   
+    &:last-child {
+        margin-bottom: rem(0);
+
+    }
 
     @include tablet {
         margin-bottom: rem(30);
@@ -93,9 +99,12 @@
         line-height: 2em;
         text-transform: uppercase;
         color: white;
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        
+        margin-bottom: rem(20);
+        position: relative;
+
+
         &:before {
             content: "";
             height: rem(0);
@@ -119,8 +128,9 @@
     .team-accordeon__text {
         display: flex;
         flex-direction: row;
-        height: 0;
-        overflow: hidden;
+        height: 0 ;
+        opacity: 0 ;
+
 
         @include tablet {
             flex-direction: column;
@@ -129,27 +139,28 @@
 
         
         .team-accordeon__pic {
-            width: rem(100);
-            height: rem(100);
-            border-radius: 50%;
+            text-align: center;
             margin-left: 3.14%;
             margin-right: 5%;
-            overflow: hidden;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
 
-            &-img {
-                max-width: rem(100);
-                max-height: rem(100);
-    
-            }
-
+            
             @include tablet {
                 margin-left: rem(0);
                 margin-right: rem(0); 
                 margin-bottom: rem(20);
             }
+
+            &-img {
+                width: rem(100);
+                height: rem(100);
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+
+    
+            }
+
         }
 
         .team-accordeon__description {
@@ -159,6 +170,12 @@
             font-size: rem(14);
             line-height: 1.71em;
             color: white;
+            
+
+           
+
+
+
 
             &-position {
                 font-family: 'ubuntubold';
@@ -174,14 +191,14 @@
 
 }
 
+
 .team-accordeon__item_active {
 
     .team-accordeon__text {
-    margin-top: rem(10);
-    height: auto;
+        height: auto ;
+        opacity: 1 ;
     }
 
-    
     .team-accordeon__trigger {
         color: $yellow;
 

@@ -671,16 +671,6 @@ input:focus, textarea:focus {
   top: 0rem;
   right: 0rem;
   bottom: 0rem; }
-  @media screen and (max-width: 768px) {
-    .menu-accordeon {
-      top: 0rem;
-      left: 0rem;
-      bottom: 0rem; } }
-  @media screen and (max-width: 480px) {
-    .menu-accordeon {
-      top: 0rem;
-      left: 0rem;
-      bottom: 0rem; } }
   .menu-accordeon__item {
     height: 100%;
     display: -webkit-box;
@@ -965,6 +955,8 @@ input:focus, textarea:focus {
   width: 6.0625rem;
   cursor: pointer;
   line-height: 0em; }
+  .form__input_button-submit:focus {
+    border: none; }
   .form__input_button-submit:hover {
     background: #c1401e;
     -webkit-transition: 0.5s;
@@ -1018,14 +1010,17 @@ input:focus, textarea:focus {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row; }
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
     @media screen and (max-width: 768px) {
       .team .container_team {
-        position: relative;
         width: 100%;
         top: 0rem;
         right: 0rem;
@@ -1067,16 +1062,9 @@ input:focus, textarea:focus {
       margin-bottom: 6.25rem; } }
 
 .team-accordeon__item {
-  margin-bottom: 2.1875rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  margin-bottom: 2.1875rem; }
+  .team-accordeon__item:last-child {
+    margin-bottom: 0rem; }
   @media screen and (max-width: 768px) {
     .team-accordeon__item {
       margin-bottom: 1.875rem;
@@ -1095,14 +1083,16 @@ input:focus, textarea:focus {
     line-height: 2em;
     text-transform: uppercase;
     color: white;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 1.25rem;
+    position: relative; }
     .team-accordeon__item .team-accordeon__trigger:before {
       content: "";
       height: 0rem;
@@ -1126,7 +1116,7 @@ input:focus, textarea:focus {
     -ms-flex-direction: row;
     flex-direction: row;
     height: 0;
-    overflow: hidden; }
+    opacity: 0; }
     @media screen and (max-width: 768px) {
       .team-accordeon__item .team-accordeon__text {
         -webkit-box-orient: vertical;
@@ -1139,23 +1129,21 @@ input:focus, textarea:focus {
         -ms-flex-align: center;
         align-items: center; } }
     .team-accordeon__item .team-accordeon__text .team-accordeon__pic {
-      width: 6.25rem;
-      height: 6.25rem;
-      border-radius: 50%;
+      text-align: center;
       margin-left: 3.14%;
-      margin-right: 5%;
-      overflow: hidden;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
-      .team-accordeon__item .team-accordeon__text .team-accordeon__pic-img {
-        max-width: 6.25rem;
-        max-height: 6.25rem; }
+      margin-right: 5%; }
       @media screen and (max-width: 768px) {
         .team-accordeon__item .team-accordeon__text .team-accordeon__pic {
           margin-left: 0rem;
           margin-right: 0rem;
           margin-bottom: 1.25rem; } }
+      .team-accordeon__item .team-accordeon__text .team-accordeon__pic-img {
+        width: 6.25rem;
+        height: 6.25rem;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center; }
     .team-accordeon__item .team-accordeon__text .team-accordeon__description {
       font-family: 'ubuntulight';
       font-weight: normal;
@@ -1171,8 +1159,8 @@ input:focus, textarea:focus {
             margin-bottom: 1.25rem; } }
 
 .team-accordeon__item_active .team-accordeon__text {
-  margin-top: 0.625rem;
-  height: auto; }
+  height: auto;
+  opacity: 1; }
 
 .team-accordeon__item_active .team-accordeon__trigger {
   color: #f9b43b; }

@@ -236,6 +236,10 @@
         @include order-button;
         line-height: 0em;
 
+        &:focus {
+            border: none;
+        }
+
         &:hover {
             background: $dark-orange;
             transition: 0.5s;
