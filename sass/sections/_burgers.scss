@@ -1,0 +1,297 @@
+.burgers {
+    background: url("./../pictures/backgrounds/burgers-linear-grad.svg") center center no-repeat;
+    display: flex;
+
+    .container_burgers {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        
+        @include tablet {
+            padding-left: 8.073%;
+            padding-right: 8.073%;
+            
+        }
+
+        @include phone {
+            padding-left: 0;
+            padding-right: 0;
+            
+        }
+
+
+    }
+}
+
+
+
+.button-burgers {
+    position: absolute;
+
+    &_left {
+      left: rem(-25); 
+      
+        @include tablet {
+            left: rem(0);
+        }
+
+        @include phone {
+            left: rem(0); 
+        }
+    }
+
+
+    &_right {
+        right: rem(-25);
+
+        @include tablet {
+            right: rem(0);
+        }
+
+        @include phone {
+            right: rem(0); 
+        }
+    }
+}
+
+
+
+.burgers-content {
+    display: flex;
+    flex-direction: row;
+    
+
+    @include tablet {
+        flex-direction: column;
+        padding-left: 8.073%;
+        padding-right: 8.073%;
+    }
+
+    @include phone {
+        padding-left: 0;
+        padding-right: 0;
+
+    }
+    
+    
+    .burgers-picture {
+        width: 52%;
+        position: relative;      
+        margin-right: rem(5);
+        height: rem(470);
+
+
+        @include tablet {
+            width: 100%;
+            height: rem(390);
+            margin-right: 0;
+            margin-bottom: rem(45);
+        }
+
+        @include phone {
+            height: rem(360);
+            margin-bottom: rem(40);
+        }
+
+        &__img {
+            height: rem(315);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain; 
+            margin-top: rem(70);
+            
+            @include tablet {
+                margin-top: rem(75);
+
+            }
+    
+            @include phone {
+                height: rem(250);
+                margin-top: rem(110);
+            }
+
+
+            img {
+                width: 100%;
+                margin-top: 14.9%;
+    
+            }
+
+
+        }
+
+        
+       
+
+
+        &__composition {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: rem(90);
+            height: rem(90);
+            border-radius: rem(5);
+            background: #f08c33;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            @include tablet {
+                width: rem(95);
+                height: rem(95);
+            }
+
+            @include phone {
+                width: rem(100);
+                height: rem(100);
+                
+            }
+            
+            &:hover {
+                background: $orange;
+                transition: 0.5s;
+            }
+
+            &-text {
+                @include gagalin-title;
+                font-size: rem(14);
+                line-height: 2em;
+                color: $white;
+            }
+        }
+
+
+        &__kkal {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: rem(60);
+            height: rem(75); 
+
+
+            @include tablet {
+                top: 0;
+                left: 87%;
+            }
+
+
+
+            &-number{
+                @include gagalin-title;
+                font-size: rem(20);
+                line-height: rem(2);
+                color: $white;
+                opacity: 0.5;
+                position: absolute ;
+                top: rem(40);
+            }
+
+            &-text {
+                @include gagalin-title;
+                font-size: rem(14);
+                line-height: rem(2);
+                color: $white;
+                opacity: 0.5;
+            }
+        }
+    }
+
+
+
+
+    .burgers-description{
+        width: 48%;
+
+        @include tablet {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .section-title {
+
+            @include phone {
+                line-height: 1.2em;
+                margin-left: 19.8%;
+                margin-right: 19.8%;
+            }
+
+        }
+
+        
+
+        &__text {
+            color: $white;
+            font-family: 'ubuntulight';
+            font-weight: normal;
+            font-style: normal;
+            font-size: rem(14);
+            line-height: 1.7142em;
+            margin-top: rem(35);
+            margin-bottom: rem(35);
+
+            @include tablet {
+                margin-top: rem(30); 
+                margin-bottom: rem(50);
+                margin-left: -8.073%;
+                margin-right: -8.073%;
+
+            }
+
+            @include phone {
+                margin-bottom: rem(25);
+                margin-left: 2.083%;
+                margin-right: 2.083%;
+
+
+            }
+
+
+        }
+
+        &__price {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+
+
+            &-text {
+                @include gagalin-title ;
+                color: $orange;
+                letter-spacing: -0.025em;
+                margin-right: rem(30);
+
+                @include phone {
+                    font-size: rem(50);
+                    line-height: 0.56em;
+                 }
+
+                &-small {
+                    font-size: rem(30);
+
+                    @include phone {
+                        font-size: rem(24);
+                        line-height: 1.167em;
+                     }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+

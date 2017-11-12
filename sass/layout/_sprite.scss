@@ -1,3 +1,46 @@
+.scroll-down__img-svg {
+  fill: $white;
+  width: rem(28);
+  height: rem(14);
+  cursor: pointer;
+}
+
+
+.button-burgers__previous-link {
+  fill: $white;
+  width: rem(28);
+  height: rem(14);
+  cursor: pointer;
+  transform: rotate(90deg);
+
+}
+
+.button-burgers__next-link {
+  fill: $white;
+  width: rem(28);
+  height: rem(14);
+  cursor: pointer;
+  transform: rotate(-90deg);
+  
+}
+
+.burgers-picture__composition-img {
+  fill: $white;
+  width: rem(50);
+  height: rem(45);
+  cursor: pointer;
+  
+}
+
+.burgers-picture__kkal-value-img {
+  fill: $white;
+  width: rem(60);
+  height: rem(65);
+  opacity: 0.5;
+}
+
+
+
 .socials__icon {
     fill: $white;
     width: rem(20);

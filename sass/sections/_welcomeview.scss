@@ -38,7 +38,7 @@
 
    
     .welcome-pic {
-        width: 42%;
+        width: 48%;
         height: 100%;
         overflow: hidden;
         margin-right: 1.09%;
@@ -63,15 +63,19 @@
     }
 
     .welcome-text {
-        width: 55%;
+        width: 49%;
+
+
 
         @include tablet {
             width: 100%;
         }
 
         .section-title_welcome {
-            margin-top: rem(70);
-            margin-bottom: rem(20);
+            margin-top: rem(80);
+            margin-bottom: rem(30);
+
+            
 
            @include tablet {
             margin-top: rem(0);
@@ -92,7 +96,7 @@
             font-weight: normal;
             font-style: normal;
             font-size: rem(65);
-            line-height: 1.3077em;
+            line-height: 0.923em;
             text-transform: lowercase;
             letter-spacing: -0.029em;
             color: #ffffff; 
@@ -104,6 +108,7 @@
             }
 
         }
+
     } 
 }
 
@@ -119,12 +124,6 @@
 
     @include phone {
         margin-bottom: 3.75%;
-    }
-    
-    &__img {
-        background: url("./../pictures/icons/arrow-scroll.svg") center center no-repeat;
-        width: rem(30);
-        height: rem(15);
     }
     
 }

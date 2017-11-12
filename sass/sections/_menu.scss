@@ -2,24 +2,25 @@
     background: url("./../pictures/backgrounds/menu.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
-      
+
+    .section-title {
+        position: absolute;
+        top: 17%;
+        left: 8.63%;
+    
+        @include tablet {
+            top: 11.23%;
+            left: 3.26%;
+        }
+    
+        @include phone {
+            top: 7.5%;
+            left: 12.5%;
+        }
+    }
+    
 }
 
-.section-title_color_white {
-    position: absolute;
-    top: 17%;
-    left: 8.63%;
-
-    @include tablet {
-        top: 11.23%;
-        left: 3.26%;
-    }
-
-    @include phone {
-        top: 7.5%;
-        left: 12.5%;
-    }
-}
 
 
 

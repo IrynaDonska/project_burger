@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg  height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="BurgersGradient" x1="0" y1="0" x2="0" y2="100%">
+            <stop offset="0%" stop-color="rgb(249,180,59)"/>
+            <stop offset="48%" stop-color="rgb(235,140,56)"/>
+            <stop offset="74%" stop-color="rgb(249,180,59)"/>
+            <stop offset="100%" stop-color="rgb(249,180,59)"/>
+        </linearGradient>
+    </defs>
+
+    <rect fill="url(#BurgersGradient)" x="0" y="0" width="100%" height="100%"/>
+</svg>
