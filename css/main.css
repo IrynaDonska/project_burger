@@ -173,14 +173,17 @@ input:focus, textarea:focus {
 .burgers-picture__composition-img {
   fill: #ffffff;
   width: 3.125rem;
-  height: 2.8125rem;
-  cursor: pointer; }
+  height: 2.8125rem; }
 
 .burgers-picture__kkal-value-img {
   fill: #ffffff;
   width: 3.75rem;
   height: 4.0625rem;
   opacity: 0.5; }
+
+.composition-list__item-img-svg {
+  width: 3.125rem;
+  height: 2.5rem; }
 
 .socials__icon {
   fill: #ffffff;
@@ -800,6 +803,92 @@ input:focus, textarea:focus {
             .burgers-content .burgers-description__price-text-small {
               font-size: 1.5rem;
               line-height: 1.167em; } }
+
+.composition-droptitle {
+  background: #ffffff;
+  opacity: 0.9;
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  height: 20.75rem;
+  width: 16.875rem;
+  position: absolute;
+  top: 0;
+  left: -624.9375rem;
+  z-index: 10; }
+  @media screen and (max-width: 768px) {
+    .composition-droptitle {
+      width: 20.0625rem; } }
+  @media screen and (max-width: 480px) {
+    .composition-droptitle {
+      width: 23.125rem; } }
+  .composition-droptitle .composition-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .composition-droptitle .composition-list .composition-list__item {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 0.3125rem;
+      font-family: 'ubuntumedium';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 0.875rem;
+      line-height: 1.714em;
+      color: #2f3234;
+      text-transform: none; }
+      .composition-droptitle .composition-list .composition-list__item-img {
+        margin-right: 1.25rem; }
+      .composition-droptitle .composition-list .composition-list__item-name {
+        width: 4.0625rem;
+        margin-right: 3.75rem; }
+      .composition-droptitle .composition-list .composition-list__item-weight {
+        width: 2.1875rem;
+        font-family: 'ubuntulight';
+        text-align: right; }
+      .composition-droptitle .composition-list .composition-list__item-close {
+        width: 1.125rem;
+        height: 1.125rem;
+        display: none; }
+        @media screen and (max-width: 768px) {
+          .composition-droptitle .composition-list .composition-list__item-close {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: -0.6875rem;
+            margin-left: 1.875rem; } }
+        @media screen and (max-width: 480px) {
+          .composition-droptitle .composition-list .composition-list__item-close {
+            margin-left: 5rem; } }
+        .composition-droptitle .composition-list .composition-list__item-close .img {
+          width: 1.125rem;
+          height: 1.125rem; }
+
+.burgers-picture__composition:hover .composition-droptitle {
+  left: 5.625rem; }
+  @media screen and (max-width: 768px) {
+    .burgers-picture__composition:hover .composition-droptitle {
+      left: 5.9375rem; } }
+  @media screen and (max-width: 480px) {
+    .burgers-picture__composition:hover .composition-droptitle {
+      left: 6.25rem; } }
 
 .section-title_feedback {
   position: absolute;
