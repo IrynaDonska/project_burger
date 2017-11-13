@@ -6,7 +6,7 @@ html {
   @media screen and (max-width: 480px) {
     html {
       font-size: 14px; } }
-  @media screen and (max-height: 605px) and (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     html {
       font-size: 13px; } }
 
@@ -105,7 +105,7 @@ input:focus, textarea:focus {
     .section-title {
       font-size: 3.125rem;
       line-height: 1.2em; } }
-  @media screen and (max-height: 605px) and (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     .section-title {
       font-size: 2.5rem; } }
   .section-title_color_black {
@@ -614,7 +614,7 @@ input:focus, textarea:focus {
       .burgers-content .burgers-picture {
         height: 22.5rem;
         margin-bottom: 2.5rem; } }
-    @media screen and (max-height: 605px) and (max-width: 360px) {
+    @media screen and (max-width: 360px) {
       .burgers-content .burgers-picture {
         height: 18.75rem;
         margin-bottom: 1.25rem; } }
@@ -711,7 +711,7 @@ input:focus, textarea:focus {
         .burgers-content .burgers-picture__kkal {
           top: 0;
           left: 87%; } }
-      @media screen and (max-height: 605px) and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .burgers-content .burgers-picture__kkal {
           left: 82%; } }
       .burgers-content .burgers-picture__kkal-number {
@@ -784,7 +784,7 @@ input:focus, textarea:focus {
           margin-bottom: 1.5625rem;
           margin-left: 2.083%;
           margin-right: 2.083%; } }
-      @media screen and (max-height: 605px) and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .burgers-content .burgers-description__text {
           margin-bottom: 0.9375rem;
           margin-top: 1.25rem; } }
@@ -817,7 +817,7 @@ input:focus, textarea:focus {
           .burgers-content .burgers-description__price-text {
             font-size: 3.125rem;
             line-height: 0.56em; } }
-        @media screen and (max-height: 605px) and (max-width: 360px) {
+        @media screen and (max-width: 360px) {
           .burgers-content .burgers-description__price-text {
             font-size: 2.5rem;
             line-height: 0.56em; } }
@@ -827,7 +827,7 @@ input:focus, textarea:focus {
             .burgers-content .burgers-description__price-text-small {
               font-size: 1.5rem;
               line-height: 1.167em; } }
-          @media screen and (max-height: 605px) and (max-width: 360px) {
+          @media screen and (max-width: 360px) {
             .burgers-content .burgers-description__price-text-small {
               font-size: 1.25rem; } }
 
@@ -848,9 +848,9 @@ input:focus, textarea:focus {
   @media screen and (max-width: 480px) {
     .composition-droptitle {
       width: 23.125rem; } }
-  @media screen and (max-height: 605px) and (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     .composition-droptitle {
-      width: 20.625rem; } }
+      width: 15.625rem; } }
   .composition-droptitle .composition-list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -885,9 +885,15 @@ input:focus, textarea:focus {
       text-transform: none; }
       .composition-droptitle .composition-list .composition-list__item-img {
         margin-right: 1.25rem; }
+        @media screen and (max-width: 360px) {
+          .composition-droptitle .composition-list .composition-list__item-img {
+            margin-right: 0.625rem; } }
       .composition-droptitle .composition-list .composition-list__item-name {
         width: 4.0625rem;
         margin-right: 3.75rem; }
+        @media screen and (max-width: 360px) {
+          .composition-droptitle .composition-list .composition-list__item-name {
+            margin-right: 1.5625rem; } }
       .composition-droptitle .composition-list .composition-list__item-weight {
         width: 2.1875rem;
         font-family: 'ubuntulight';
@@ -907,6 +913,9 @@ input:focus, textarea:focus {
         @media screen and (max-width: 480px) {
           .composition-droptitle .composition-list .composition-list__item-close {
             margin-left: 5rem; } }
+        @media screen and (max-width: 360px) {
+          .composition-droptitle .composition-list .composition-list__item-close {
+            margin-left: 0.625rem; } }
         .composition-droptitle .composition-list .composition-list__item-close .img {
           width: 1.125rem;
           height: 1.125rem; }
@@ -1086,7 +1095,7 @@ input:focus, textarea:focus {
       .menu .section-title {
         top: 7.5%;
         left: 12.5%; } }
-    @media screen and (max-height: 605px) and (max-width: 360px) {
+    @media screen and (max-width: 360px) {
       .menu .section-title {
         left: 8%; } }
 
@@ -1152,7 +1161,7 @@ input:focus, textarea:focus {
       @media screen and (max-width: 480px) {
         .menu-accordeon__trigger-title {
           margin-bottom: 3.75rem; } }
-      @media screen and (max-height: 605px) and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .menu-accordeon__trigger-title {
           font-size: 1.875rem;
           margin-bottom: 2.8125rem; } }
@@ -1265,7 +1274,7 @@ input:focus, textarea:focus {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.9375rem; }
-  @media screen and (max-height: 605px) and (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     .form__row {
       margin-bottom: 0.3125rem; } }
   .form__row_textarea {
@@ -1273,7 +1282,7 @@ input:focus, textarea:focus {
     @media screen and (max-width: 480px) {
       .form__row_textarea {
         margin-bottom: 2.5rem; } }
-    @media screen and (max-height: 605px) and (max-width: 360px) {
+    @media screen and (max-width: 360px) {
       .form__row_textarea {
         margin-bottom: 0.625rem; } }
   .form__row_pay {
@@ -1285,7 +1294,7 @@ input:focus, textarea:focus {
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center; } }
-    @media screen and (max-height: 605px) and (max-width: 360px) {
+    @media screen and (max-width: 360px) {
       .form__row_pay {
         margin-bottom: 0.625rem; } }
   @media screen and (max-width: 768px) {
@@ -1297,7 +1306,7 @@ input:focus, textarea:focus {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center; } }
-  @media screen and (max-height: 605px) and (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     .form__row_call {
       margin-bottom: 0.9375rem; } }
   @media screen and (max-width: 480px) {
@@ -1511,7 +1520,7 @@ input:focus, textarea:focus {
   @media screen and (max-width: 480px) {
     .section-title_team {
       margin-bottom: 6.25rem; } }
-  @media screen and (max-height: 605px) and (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     .section-title_team {
       margin-bottom: 3.125rem; } }
 
@@ -1529,7 +1538,7 @@ input:focus, textarea:focus {
   @media screen and (max-width: 480px) {
     .team-accordeon__item {
       margin-bottom: 2.5rem; } }
-  @media screen and (max-height: 605px) and (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     .team-accordeon__item {
       margin-bottom: 1.25rem; } }
   .team-accordeon__item .team-accordeon__trigger {
@@ -1562,7 +1571,7 @@ input:focus, textarea:focus {
       .team-accordeon__item .team-accordeon__trigger {
         font-size: 1.525rem;
         line-height: 1.166em; } }
-    @media screen and (max-height: 605px) and (max-width: 360px) {
+    @media screen and (max-width: 360px) {
       .team-accordeon__item .team-accordeon__trigger {
         font-size: 1.25rem; } }
   .team-accordeon__item .team-accordeon__text {
@@ -1597,7 +1606,7 @@ input:focus, textarea:focus {
           margin-left: 0rem;
           margin-right: 0rem;
           margin-bottom: 1.25rem; } }
-      @media screen and (max-height: 605px) and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .team-accordeon__item .team-accordeon__text .team-accordeon__pic {
           margin-bottom: 0.625rem; } }
       .team-accordeon__item .team-accordeon__text .team-accordeon__pic-img {
@@ -1620,7 +1629,7 @@ input:focus, textarea:focus {
         @media screen and (max-width: 768px) {
           .team-accordeon__item .team-accordeon__text .team-accordeon__description-position {
             margin-bottom: 1.25rem; } }
-        @media screen and (max-height: 605px) and (max-width: 360px) {
+        @media screen and (max-width: 360px) {
           .team-accordeon__item .team-accordeon__text .team-accordeon__description-position {
             margin-bottom: 0.625rem; } }
 
@@ -1749,7 +1758,7 @@ input:focus, textarea:focus {
       @media screen and (max-width: 480px) {
         .reasons-list .reason__title {
           margin-bottom: 1.4375rem; } }
-      @media screen and (max-height: 605px) and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .reasons-list .reason__title {
           margin-bottom: 0.8125rem;
           font-size: 1.25rem; } }
@@ -1760,7 +1769,7 @@ input:focus, textarea:focus {
       font-size: 0.87687rem;
       line-height: 1.7142em;
       color: #2f3234; }
-      @media screen and (max-height: 605px) and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .reasons-list .reason__description {
           font-size: 0.75rem; } }
 
@@ -1829,7 +1838,7 @@ input:focus, textarea:focus {
       margin-bottom: 8.75%;
       padding-left: 2.9375rem;
       padding-right: 2.9375rem; } }
-  @media screen and (max-height: 605px) and (max-width: 360px) {
+  @media screen and (max-width: 360px) {
     .welcome-content {
       margin-bottom: 3.75%; } }
   .welcome-content .welcome-pic {
@@ -1847,7 +1856,7 @@ input:focus, textarea:focus {
     @media screen and (max-width: 480px) {
       .welcome-content .welcome-pic {
         margin-bottom: 6.25%; } }
-    @media screen and (max-height: 605px) and (max-width: 360px) {
+    @media screen and (max-width: 360px) {
       .welcome-content .welcome-pic {
         margin-bottom: 2.25%; } }
     .welcome-content .welcome-pic__img {
@@ -1870,7 +1879,7 @@ input:focus, textarea:focus {
           margin-bottom: 1.25rem;
           font-size: 3.9375rem;
           line-height: 0.9524em; } }
-      @media screen and (max-height: 605px) and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .welcome-content .welcome-text .section-title_welcome {
           margin-bottom: 0.625rem;
           font-size: 2.6875rem;
@@ -1889,7 +1898,7 @@ input:focus, textarea:focus {
           font-size: 3.375rem;
           letter-spacing: -0.025em;
           line-height: 1.11em; } }
-      @media screen and (max-height: 605px) and (max-width: 360px) {
+      @media screen and (max-width: 360px) {
         .welcome-content .welcome-text .welcome__description {
           font-size: 2.125rem; } }
 

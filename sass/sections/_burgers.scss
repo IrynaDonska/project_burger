@@ -325,7 +325,7 @@
     opacity: 0.9;
     padding: rem(20);
     border-radius: rem(5);
-    height: rem(332) ;
+    height: rem(332) ; 
     width: rem(270) ;
     position: absolute;
     top: 0;
@@ -344,17 +344,13 @@
     }
 
     @include iphone { 
-        width: rem(330) ;
-        
+        width: rem(250) ; 
     }
     
-
-
 
     .composition-list {
         display: flex;
         flex-direction: column;
-
 
 
         .composition-list__item {
@@ -374,11 +370,22 @@
             &-img {
                 margin-right: rem(20);
 
+                @include iphone { 
+                    margin-right: rem(10); 
+                }
             }
+
+
+
 
             &-name {
                 width: rem(65);
                 margin-right: rem(60);
+
+                @include iphone { 
+                    margin-right: rem(25); 
+                }
+
 
             }
 
@@ -387,6 +394,7 @@
                 font-family: 'ubuntulight';
                 text-align: right;
             }
+
 
             &-close {
                 width: rem(18);
@@ -401,6 +409,12 @@
 
                 @include phone { 
                     margin-left: rem(80);
+                }
+
+                @include iphone { 
+                    margin-left: rem(10); 
+
+
                 }
 
                 .img {
