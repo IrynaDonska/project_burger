@@ -847,10 +847,7 @@ input:focus, textarea:focus {
       width: 20.0625rem; } }
   @media screen and (max-width: 480px) {
     .composition-droptitle {
-      width: 23.125rem; } }
-  @media screen and (max-width: 360px) {
-    .composition-droptitle {
-      width: 15.625rem; } }
+      width: 79%; } }
   .composition-droptitle .composition-list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -884,16 +881,22 @@ input:focus, textarea:focus {
       color: #2f3234;
       text-transform: none; }
       .composition-droptitle .composition-list .composition-list__item-img {
-        margin-right: 1.25rem; }
-        @media screen and (max-width: 360px) {
+        margin-right: 7.4%; }
+        @media screen and (max-width: 768px) {
           .composition-droptitle .composition-list .composition-list__item-img {
-            margin-right: 0.625rem; } }
+            margin-right: 6.23%; } }
+        @media screen and (max-width: 480px) {
+          .composition-droptitle .composition-list .composition-list__item-img {
+            margin-right: 5.4%; } }
       .composition-droptitle .composition-list .composition-list__item-name {
         width: 4.0625rem;
-        margin-right: 3.75rem; }
-        @media screen and (max-width: 360px) {
+        margin-right: 22.22%; }
+        @media screen and (max-width: 768px) {
           .composition-droptitle .composition-list .composition-list__item-name {
-            margin-right: 1.5625rem; } }
+            margin-right: 18.72%; } }
+        @media screen and (max-width: 480px) {
+          .composition-droptitle .composition-list .composition-list__item-name {
+            margin-right: 16.216%; } }
       .composition-droptitle .composition-list .composition-list__item-weight {
         width: 2.1875rem;
         font-family: 'ubuntulight';
@@ -909,24 +912,21 @@ input:focus, textarea:focus {
             display: -ms-flexbox;
             display: flex;
             margin-top: -0.6875rem;
-            margin-left: 1.875rem; } }
+            margin-left: 9.345%; } }
         @media screen and (max-width: 480px) {
           .composition-droptitle .composition-list .composition-list__item-close {
-            margin-left: 5rem; } }
-        @media screen and (max-width: 360px) {
-          .composition-droptitle .composition-list .composition-list__item-close {
-            margin-left: 0.625rem; } }
+            margin-left: 21.621%; } }
         .composition-droptitle .composition-list .composition-list__item-close .img {
           width: 1.125rem;
           height: 1.125rem; }
 
-.burgers-picture__composition:hover .composition-droptitle {
+.burgers-picture__composition:hover ~ .composition-droptitle {
   left: 5.625rem; }
   @media screen and (max-width: 768px) {
-    .burgers-picture__composition:hover .composition-droptitle {
+    .burgers-picture__composition:hover ~ .composition-droptitle {
       left: 5.9375rem; } }
   @media screen and (max-width: 480px) {
-    .burgers-picture__composition:hover .composition-droptitle {
+    .burgers-picture__composition:hover ~ .composition-droptitle {
       left: 6.25rem; } }
 
 .section-title_feedback {

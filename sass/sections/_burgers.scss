@@ -323,30 +323,30 @@
 .composition-droptitle  {
     background: $white;
     opacity: 0.9;
-    padding: rem(20);
+    padding: rem(20) ;
     border-radius: rem(5);
-    height: rem(332) ; 
-    width: rem(270) ;
+    height: rem(332); 
+    width: rem(270) ; //55.5%
     position: absolute;
     top: 0;
     left: rem(-9999);
     z-index: 10;
 
 
+
     @include tablet {
-        width: rem(321) ;  
-
-    }
-
-    @include phone { 
-        width: rem(370) ;
+        width:  rem(321);  //64.6% 
         
     }
 
-    @include iphone { 
-        width: rem(250) ; 
+
+    @include phone { 
+        width: 79%; // rem(370)
+        
+        
     }
-    
+
+
 
     .composition-list {
         display: flex;
@@ -368,24 +368,32 @@
 
 
             &-img {
-                margin-right: rem(20);
+                margin-right: 7.4%; //20
 
-                @include iphone { 
-                    margin-right: rem(10); 
+                @include tablet { 
+                    margin-right:  6.23%; 
+                }
+
+                @include phone { 
+                    margin-right: 5.4%; 
                 }
             }
 
 
 
-
             &-name {
                 width: rem(65);
-                margin-right: rem(60);
+                margin-right: 22.22%;//60
 
-                @include iphone { 
-                    margin-right: rem(25); 
+                @include tablet { 
+                    margin-right: 18.72%; 
                 }
 
+                @include phone { 
+                    margin-right: 16.216%; 
+                }
+
+               
 
             }
 
@@ -404,18 +412,13 @@
                 @include tablet {
                     display: flex; 
                     margin-top: rem(-11);
-                    margin-left: rem(30);
+                    margin-left: 9.345%;//30
                 }
 
                 @include phone { 
-                    margin-left: rem(80);
+                    margin-left: 21.621%;//80
                 }
 
-                @include iphone { 
-                    margin-left: rem(10); 
-
-
-                }
 
                 .img {
                     width: rem(18);
@@ -434,19 +437,20 @@
 }
 
 
-.burgers-picture__composition:hover .composition-droptitle {
+.burgers-picture__composition:hover ~ .composition-droptitle {
     left: rem(90);
 
-    @include tablet {  
+    @include tablet {
         left: rem(95);
-
+    
     }
-
-    @include phone { 
+    
+    @include phone {
         left: rem(100);
-        
+
     }
-    
-    
+
 }
+
+
 
