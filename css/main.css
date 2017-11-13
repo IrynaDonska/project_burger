@@ -960,7 +960,7 @@ input:focus, textarea:focus {
       color: #ffffff;
       margin: 15.3% 10.8% 9.33% 6.15%;
       opacity: 0;
-      z-index: 5; }
+      z-index: 10; }
       @media screen and (max-width: 768px) {
         .feedback__list .feedback__item .feedback__text {
           display: -webkit-box;
@@ -972,9 +972,6 @@ input:focus, textarea:focus {
           -ms-flex-align: center;
           align-items: center;
           text-align: center; } }
-      @media screen and (max-width: 480px) {
-        .feedback__list .feedback__item .feedback__text {
-          margin: 5.63% 11.45% 5.63% 11.45%; } }
       .feedback__list .feedback__item .feedback__text-name {
         font-family: 'gagalinregular';
         font-weight: normal;
@@ -1338,12 +1335,14 @@ input:focus, textarea:focus {
     display: block;
     color: #e45028;
     top: -0.0625rem;
-    left: 0.15625rem; }
+    left: 0.15625rem;
+    width: 0.9375rem;
+    height: 0.9375rem; }
 
 .form__button {
   margin-right: 0.625rem; }
 
-.form__input_button-submit {
+.form__button-submit {
   font-family: 'ubuntumedium';
   font-weight: normal;
   font-style: normal;
@@ -1358,15 +1357,15 @@ input:focus, textarea:focus {
   width: 6.0625rem;
   cursor: pointer;
   line-height: 0em; }
-  .form__input_button-submit:focus {
+  .form__button-submit:focus {
     border: none; }
-  .form__input_button-submit:hover {
+  .form__button-submit:hover {
     background: #c1401e;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
 
-.form__input_button-reset {
+.form__button-reset {
   font-family: 'ubuntumedium';
   font-weight: normal;
   font-style: normal;
@@ -1382,10 +1381,10 @@ input:focus, textarea:focus {
   cursor: pointer;
   line-height: 0em;
   background: transparent; }
-  .form__input_button-reset:focus {
-    border: none; }
-  .form__input_button-reset:hover {
-    background: #c1401e;
+  .form__button-reset:focus {
+    border: 0.0625rem solid #e45028; }
+  .form__button-reset:hover {
+    background: #2f3234;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }

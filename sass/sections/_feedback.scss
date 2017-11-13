@@ -74,8 +74,8 @@
             color: $white;
             margin: 15.3% 10.8% 9.33% 6.15%;
             opacity: 0;
-            z-index: 5;
-
+            z-index: 10;
+            
             @include tablet {
                 //margin: 3.42% 10.42% 1.95% 10.42% ;
                 display: flex;
@@ -84,7 +84,7 @@
             }
 
             @include phone {
-                margin: 5.63% 11.45% 5.63% 11.45% ;
+                //margin: 5.63% 11.45% 5.63% 11.45% ;
                 
             }
     

@@ -214,10 +214,11 @@
         &::after {
             position: absolute;
             display: block;
-            
             color: $orange;
             top: rem(-1);
             left: rem(2.5); 
+            width: rem(15);
+            height: rem(15);
 
         }
     }
@@ -226,13 +227,13 @@
 
 
 
+
+
     &__button {
         margin-right: rem(10);
-
-       
     }
 
-    &__input_button-submit {
+    &__button-submit {
         @include order-button;
         line-height: 0em;
 
@@ -248,17 +249,18 @@
        
     }
 
-    &__input_button-reset {
+
+    &__button-reset {
         @include order-button;
         line-height: 0em;
         background: transparent;
         
         &:focus {
-            border: none;
+            border: rem(1) solid $orange;
         }
 
         &:hover {
-            background: $dark-orange;
+            background: $dark;
             transition: 0.5s;
         }
 
@@ -275,12 +277,9 @@
 
 .form__call-element:checked + .form__block-title_call:after{
     content: "\2714";
-    
+
   }
 
   
-
-
-
 
 
