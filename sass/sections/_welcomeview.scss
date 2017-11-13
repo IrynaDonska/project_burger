@@ -26,15 +26,17 @@
         align-items: center;
         text-align: center;
         margin-bottom: 14.7%;
-        padding-left: rem(135);
-        padding-right:  rem(135);
+        padding-left: 17.9270%;
+        padding-right:  17.9270%;
+
     }
 
     @include phone {
         justify-content: center;
         margin-bottom: 8.75%;
-        padding-left: rem(47);
-        padding-right:  rem(47);
+        padding-left: 9%;
+        padding-right:  9%;
+
     }  
 
     @include iphone {
@@ -54,12 +56,12 @@
             width: 100%;
             margin-right: 0;
             margin-left: 0;
-            margin-bottom: 3.9%;
-
+            margin-bottom: 7%; 
         }
 
         @include phone {
-            margin-bottom: 6.25%;
+            margin-bottom: 12%;
+
         }
 
         @include iphone {
@@ -88,11 +90,11 @@
 
             @include tablet {
                 margin-top: rem(0);
-                margin-bottom: rem(40);
+                margin-bottom: 5.906%;
            }
 
             @include phone {
-                margin-bottom: rem(20); 
+                margin-bottom: 1.906%; 
                 font-size: rem(63);
                 line-height: 0.9524em;
            }
@@ -141,7 +143,7 @@
     margin-bottom: 6.15%;
 
     @include tablet {
-        margin-bottom: 3.9%;
+        margin-bottom: 6.5%;
     }
 
     @include phone {

@@ -7,20 +7,25 @@
 }
 
 .section-title_orderform {
-    margin-top:  12.3%;
-    margin-bottom: 10.77%;
+    margin-top:  13.846%;
+    margin-bottom: 12.307%;
+
 
     @include tablet {
         margin-top:  11.92%;
-        margin-bottom: 6.84%; 
+        margin-bottom: 10.84%; 
     }
 
     @include phone {
-        margin:  8.5%  19.8% 2.75% 19.8%;
-        
+        margin: 12.5% 19.8% 4.75% 19.8%;
+    }
+
+    @include iphone {
+        margin: 10% 19.8% 3% 19.8%;
     }
 
 }
+
 
 
 
@@ -31,8 +36,8 @@
 
         @include tablet {
             flex-direction: column;
-            margin-left: 16.14%;
-            margin-right: 16.14%;
+            margin-left: 17.14%;
+            margin-right: 17.14%;
 
         }
 
@@ -123,8 +128,11 @@
         flex: 1;
         margin-right: rem(20);
 
-        &:last-child {
+        @include phone {
+            margin-right: rem(10);
+        }
 
+        &:last-child {
             @include tablet {
                 margin-right: rem(0);
     
@@ -152,6 +160,10 @@
 
         }
 
+        &_textarea {
+            margin-right: 0;
+        }
+
     }
 
 
@@ -170,7 +182,9 @@
         padding: rem(10) rem(10);
         resize: none;
         width: 100%;
-        height: rem(114);
+        height: rem(114); 
+
+
     }
 
     &__block-title_pay {

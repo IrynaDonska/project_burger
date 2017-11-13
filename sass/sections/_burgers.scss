@@ -20,7 +20,6 @@
             
         }
 
-
     }
 }
 
@@ -30,10 +29,12 @@
     position: absolute;
 
     &_left {
-      left: rem(-25); 
+      left: rem(-40); 
       
+
         @include tablet {
-            left: rem(0);
+            left: rem(12);
+
         }
 
         @include phone {
@@ -41,12 +42,11 @@
         }
     }
 
-
     &_right {
-        right: rem(-25);
+        right: rem(-40);
 
         @include tablet {
-            right: rem(0);
+            right: rem(12);
         }
 
         @include phone {
@@ -64,8 +64,9 @@
 
     @include tablet {
         flex-direction: column;
-        padding-left: 8.073%;
-        padding-right: 8.073%;
+        padding-left: 9.073%;
+        padding-right: 9.073%;
+
     }
 
     @include phone {
@@ -78,7 +79,7 @@
     .burgers-picture {
         width: 52%;
         position: relative;      
-        margin-right: rem(5);
+        margin-right: rem(-6);
         height: rem(470);
 
 
@@ -86,13 +87,16 @@
             width: 100%;
             height: rem(390);
             margin-right: 0;
-            margin-bottom: rem(45);
+            margin-bottom: 9%;
+
         }
 
         @include phone {
             height: rem(360);
-            margin-bottom: rem(40);
+            margin-bottom: 7%;
+
         }
+        
 
         @include iphone {
             height: rem(300);
@@ -104,22 +108,26 @@
 
         &__img {
             height: rem(315);
-            background-position: center center;
+            background-position: center left;
             background-repeat: no-repeat;
             background-size: contain; 
             margin-top: rem(70);
             
             @include tablet {
                 margin-top: rem(75);
+                background-position: center center;
 
             }
     
             @include phone {
-                height: rem(250);
+                height: rem(254);
                 margin-top: rem(110);
+                background-position: center center;
+
             }
 
-            @include phone {
+
+            @include iphone {
                 height: rem(200);
                 margin-top: rem(100);
 
@@ -154,17 +162,16 @@
             cursor: pointer;
 
             @include tablet {
-                width: rem(95);
-                height: rem(95);
+                width: rem(90);
+                height: rem(90);
             }
 
             @include phone {
-                width: rem(100);
-                height: rem(100);
-                
+                width: rem(90);
+                height: rem(90);
             }
 
-            
+
             &:hover {
                 background: $orange;
                 transition: 0.5s;
@@ -177,6 +184,7 @@
                 color: $white;
             }
         }
+
 
 
         &__kkal {
@@ -192,11 +200,11 @@
 
             @include tablet {
                 top: 0;
-                left: 87%;
+                left: 85%;
             }
 
-            @include iphone {
-                left: 82%;
+            @include phone {
+                left: 86%;
             }
 
 
@@ -237,6 +245,10 @@
 
         .section-title {
 
+            @include tablet {
+                margin-left: -3%;
+            }
+
             @include phone {
                 line-height: 1.2em;
                 margin-left: 19.8%;
@@ -254,15 +266,16 @@
             font-style: normal;
             font-size: rem(14);
             line-height: 1.7142em;
-            margin-top: rem(35);
-            margin-bottom: rem(35);
+            margin-top: rem(38);
+            margin-bottom: rem(30);
+
+
 
             @include tablet {
-                margin-top: rem(30); 
-                margin-bottom: rem(50);
+                margin-top: 3.929%; 
+                margin-bottom: 8%;
                 margin-left: -8.073%;
                 margin-right: -8.073%;
-
             }
 
             @include phone {
@@ -357,7 +370,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin-bottom: rem(5);
+            margin-bottom: rem(4);
             font-family: 'ubuntumedium';
             font-weight: normal;
             font-style: normal;
@@ -367,8 +380,9 @@
             text-transform: none;
 
 
+    
             &-img {
-                margin-right: 7.4%; //20
+                margin-right: 8%; 
 
                 @include tablet { 
                     margin-right:  6.23%; 
@@ -383,7 +397,7 @@
 
             &-name {
                 width: rem(65);
-                margin-right: 22.22%;//60
+                margin-right: 27%;
 
                 @include tablet { 
                     margin-right: 18.72%; 
@@ -441,12 +455,12 @@
     left: rem(90);
 
     @include tablet {
-        left: rem(95);
+        left: rem(90);
     
     }
     
     @include phone {
-        left: rem(100);
+        left: rem(90);
 
     }
 
