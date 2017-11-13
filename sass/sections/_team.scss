@@ -70,6 +70,11 @@
         margin-bottom: rem(100);
     }
 
+    @include iphone {
+        margin-bottom: rem(50);
+    }
+
+
 }
 
 
@@ -89,6 +94,12 @@
     @include phone {
         margin-bottom: rem(40);
     }
+
+    @include iphone {
+        margin-bottom: rem(20);
+    }
+
+
 
 
     .team-accordeon__trigger {
@@ -121,6 +132,11 @@
             line-height: 1.166em;
         }
 
+        @include iphone {
+            font-size: rem(20);
+
+        }
+
     }
 
     
@@ -149,6 +165,11 @@
                 margin-right: rem(0); 
                 margin-bottom: rem(20);
             }
+
+            @include iphone { 
+                margin-bottom: rem(10);
+            }
+
 
             &-img {
                 width: rem(100);
@@ -185,11 +206,16 @@
                     margin-bottom: rem(20);
                 }
 
+                @include iphone {
+                    margin-bottom: rem(10);
+                }
+
             }
         }
     }
 
 }
+
 
 
 .team-accordeon__item_active {

@@ -17,6 +17,11 @@
             top: 7.5%;
             left: 12.5%;
         }
+
+        @include iphone {
+            left: 8%;
+        }
+
     }
     
 }
@@ -32,24 +37,11 @@ top: rem(0);
 right: rem(0);
 bottom: rem(0);
 
-@include tablet {
-    
-    
-}
-
-@include phone {
-    
-    
-}
-
-
-
 
     &__item {
         height: 100%;
         display: flex;
         flex-direction: row;         
-
     
     }
 
@@ -84,6 +76,12 @@ bottom: rem(0);
             @include phone {
                 margin-bottom: rem(60); 
             }
+
+            @include iphone {
+                font-size: rem(30); 
+                margin-bottom: rem(45);
+            }
+
 
         }
     }

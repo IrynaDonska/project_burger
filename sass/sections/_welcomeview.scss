@@ -12,6 +12,7 @@
 }
 
 
+
 .welcome-content {
     width: 100%;
     display: flex;
@@ -36,6 +37,11 @@
         padding-right:  rem(47);
     }  
 
+    @include iphone {
+        margin-bottom: 3.75%;
+    }
+
+
    
     .welcome-pic {
         width: 48%;
@@ -55,6 +61,12 @@
         @include phone {
             margin-bottom: 6.25%;
         }
+
+        @include iphone {
+            margin-bottom: 2.25%;
+        }
+
+    
         
         &__img {
             width: 100%;
@@ -65,8 +77,6 @@
     .welcome-text {
         width: 49%;
 
-
-
         @include tablet {
             width: 100%;
         }
@@ -75,18 +85,25 @@
             margin-top: rem(80);
             margin-bottom: rem(30);
 
-            
 
-           @include tablet {
-            margin-top: rem(0);
-            margin-bottom: rem(40);
+            @include tablet {
+                margin-top: rem(0);
+                margin-bottom: rem(40);
            }
 
-           @include phone {
+            @include phone {
                 margin-bottom: rem(20); 
                 font-size: rem(63);
                 line-height: 0.9524em;
            }
+
+            @include iphone {
+                margin-bottom: rem(10); 
+                font-size: rem(43);
+                line-height: 0.9524em;
+            }
+
+
         }
 
         
@@ -105,6 +122,11 @@
                 font-size: rem(54);
                 letter-spacing: -0.025em;
                 line-height: 1.11em;
+            }
+
+            @include iphone {
+                font-size: rem(34);
+            
             }
 
         }

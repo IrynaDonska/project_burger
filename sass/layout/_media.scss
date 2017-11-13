@@ -13,3 +13,11 @@
     }
 }
 
+
+@mixin iphone {
+    @media screen and (max-height: $iphoneh) and (max-width: $iphonew) {
+        @content;
+    }
+}
+
+

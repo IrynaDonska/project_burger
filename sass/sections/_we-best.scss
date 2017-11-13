@@ -58,10 +58,10 @@
             margin-right: rem(0);
         }
 
-       @include phone {
-           display: flex;
-           flex-direction: row;
-           justify-content: space-between;
+        @include phone {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             width: 100%;
             margin-right: rem(0);
             text-align: left;
@@ -95,7 +95,14 @@
             @include phone {
                 margin-bottom: rem(23);
             }
+
+            @include iphone {
+                margin-bottom: rem(13);
+                font-size: rem(20);
+
+            }
             
+
         }
 
         &__description {
@@ -105,6 +112,11 @@
             font-size: rem(14.03);
             line-height: 1.7142em;
             color: $dark;
+
+            @include iphone {
+                font-size: rem(12);
+
+            }
         }
     }
 }

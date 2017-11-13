@@ -60,11 +60,20 @@
         display: flex;
         margin-bottom: rem(15);
 
+        @include iphone {
+            margin-bottom: rem(5); 
+        }
+
+
         &_textarea {
             margin-bottom: rem(8); 
 
             @include phone {
                 margin-bottom: rem(40); 
+            }
+
+            @include iphone {
+                margin-bottom: rem(10); 
             }
         }
 
@@ -75,6 +84,11 @@
                 margin-bottom: rem(40); 
                 justify-content: center;
             }
+
+            @include iphone {
+                margin-bottom: rem(10); 
+            }
+
 
         }
 
@@ -87,6 +101,11 @@
             @include phone {
                 justify-content: center;
             }  
+
+            @include iphone {
+                margin-bottom: rem(15); 
+            }
+
         }
 
         &_button {

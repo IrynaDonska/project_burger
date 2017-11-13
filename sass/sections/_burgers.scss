@@ -94,6 +94,14 @@
             margin-bottom: rem(40);
         }
 
+        @include iphone {
+            height: rem(300);
+            margin-bottom: rem(20);
+
+
+        }
+        
+
         &__img {
             height: rem(315);
             background-position: center center;
@@ -109,6 +117,12 @@
             @include phone {
                 height: rem(250);
                 margin-top: rem(110);
+            }
+
+            @include phone {
+                height: rem(200);
+                margin-top: rem(100);
+
             }
 
 
@@ -149,6 +163,7 @@
                 height: rem(100);
                 
             }
+
             
             &:hover {
                 background: $orange;
@@ -180,6 +195,9 @@
                 left: 87%;
             }
 
+            @include iphone {
+                left: 82%;
+            }
 
 
             &-number{
@@ -251,8 +269,11 @@
                 margin-bottom: rem(25);
                 margin-left: 2.083%;
                 margin-right: 2.083%;
+            }
 
-
+            @include iphone {
+                margin-bottom: rem(15);
+                margin-top: rem(20); 
             }
 
 
@@ -275,14 +296,23 @@
                     line-height: 0.56em;
                  }
 
+                @include iphone {
+                    font-size: rem(40);
+                    line-height: 0.56em;
+                }
+
                 &-small {
                     font-size: rem(30);
 
                     @include phone {
                         font-size: rem(24);
                         line-height: 1.167em;
-                     }
+                    }
 
+                    @include iphone {
+                        font-size: rem(20);
+                        
+                    }
                 }
             }
         }
@@ -312,7 +342,13 @@
         width: rem(370) ;
         
     }
+
+    @include iphone { 
+        width: rem(330) ;
+        
+    }
     
+
 
 
     .composition-list {
@@ -365,8 +401,6 @@
 
                 @include phone { 
                     margin-left: rem(80);
-
-                    
                 }
 
                 .img {
@@ -391,7 +425,6 @@
 
     @include tablet {  
         left: rem(95);
-
 
     }
 
