@@ -27,11 +27,12 @@ $iphonew: 360px;
 @import "layout/_fonts";
 @import "layout/_sprite";
 
-
 //elements
 @import "sections/elements/_footer";
 @import "sections/elements/_pagination";
 @import "sections/elements/_header";
+@import "sections/elements/_composition-droptitle";
+@import "sections/elements/_hidden-menu";
 
 //sections
 @import "sections/_burgers";

@@ -1,0 +1,132 @@
+.composition-droptitle  {
+    background: $white;
+    opacity: 0.9;
+    padding: rem(20) ;
+    border-radius: rem(5);
+    height: rem(332); 
+    width: rem(270) ; //55.5%
+    position: absolute;
+    top: 0;
+    left: rem(-9999);
+    z-index: 10;
+
+
+
+    @include tablet {
+        width:  rem(321);  //64.6% 
+        
+    }
+
+
+    @include phone { 
+        width: 79%; // rem(370)
+        
+        
+    }
+
+
+
+    .composition-list {
+        display: flex;
+        flex-direction: column;
+
+
+        .composition-list__item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: rem(4);
+            font-family: 'ubuntumedium';
+            font-weight: normal;
+            font-style: normal;
+            font-size: rem(14);
+            line-height: 1.714em;
+            color: $dark;
+            text-transform: none;
+
+
+    
+            &-img {
+                margin-right: 8%; 
+
+                @include tablet { 
+                    margin-right:  6.23%; 
+                }
+
+                @include phone { 
+                    margin-right: 5.4%; 
+                }
+            }
+
+
+
+            &-name {
+                width: rem(65);
+                margin-right: 27%;
+
+                @include tablet { 
+                    margin-right: 18.72%; 
+                }
+
+                @include phone { 
+                    margin-right: 16.216%; 
+                }
+
+               
+
+            }
+
+            &-weight {
+                width: rem(35);
+                font-family: 'ubuntulight';
+                text-align: right;
+            }
+
+
+            &-close {
+                width: rem(18);
+                height: rem(18);
+                display: none;
+
+                @include tablet {
+                    display: flex; 
+                    margin-top: rem(-11);
+                    margin-left: 9.345%;//30
+                }
+
+                @include phone { 
+                    margin-left: 21.621%;//80
+                }
+
+
+                .img {
+                    width: rem(18);
+                    height: rem(18);
+                }
+
+
+
+            }
+
+
+        }
+
+    }
+
+}
+
+
+.burgers-picture__composition:hover ~ .composition-droptitle {
+    left: rem(90);
+
+    @include tablet {
+        left: rem(90);
+    
+    }
+    
+    @include phone {
+        left: rem(90);
+
+    }
+
+}
