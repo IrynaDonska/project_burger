@@ -82,7 +82,6 @@
 .team-accordeon__item {
     margin-bottom: 3.5%;
 
-   
     &:last-child {
         margin-bottom: rem(0);
 
@@ -116,7 +115,7 @@
         display: inline-flex;
         align-items: center;
         position: relative;
-
+        cursor: pointer;
 
         &:before {
             content: "";
@@ -141,73 +140,85 @@
 
     }
 
-    
-
-    .team-accordeon__text {
-        display: flex;
-        flex-direction: row;
+    .team-accordeon__content {
         height: 0 ;
-        opacity: 0 ;
+        overflow: hidden;
+        transition: .5s;
 
 
-        @include tablet {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        
-        .team-accordeon__pic {
-            text-align: center;
-            margin-left: 3.14%;
-            margin-right: 4%;
+        .team-accordeon__text {
+            display: flex;
+            flex-direction: row;
+            padding-top: 2%;
 
             
             @include tablet {
-                margin-left: rem(0);
-                margin-right: rem(0); 
-                margin-bottom: 5%;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 3%;
+  
             }
 
-            @include iphone { 
-                margin-bottom: rem(10);
+            @include phone {
+                padding-top: 4%;
+   
             }
-
-
-            &-img {
-                width: rem(100);
-                height: rem(100);
-                border-radius: 50%;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-
     
-            }
 
-        }
-
-        .team-accordeon__description {
-            font-family: 'ubuntulight';
-            font-weight: normal;
-            font-style: normal;
-            font-size: rem(14);
-            line-height: 1.71em;
-            color: white;
-            
-            &-position {
-                font-family: 'ubuntubold';
-                margin-bottom: 2.3%;
-
+            .team-accordeon__pic {
+                text-align: center;
+                margin-left: 3.14%;
+                margin-right: 4%;
+    
+                
                 @include tablet {
-                    margin-bottom: 2%;
+                    margin-left: rem(0);
+                    margin-right: rem(0); 
+                    margin-bottom: 5%;
                 }
-
-                @include iphone {
+    
+                @include iphone { 
                     margin-bottom: rem(10);
                 }
-
+    
+    
+                &-img {
+                    width: rem(100);
+                    height: rem(100);
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center center;
+    
+        
+                }
+    
+            }
+    
+            .team-accordeon__description {
+                font-family: 'ubuntulight';
+                font-weight: normal;
+                font-style: normal;
+                font-size: rem(14);
+                line-height: 1.71em;
+                color: white;
+                
+                &-position {
+                    font-family: 'ubuntubold';
+                    margin-bottom: 2.3%;
+    
+                    @include tablet {
+                        margin-bottom: 2%;
+                    }
+    
+                    @include iphone {
+                        margin-bottom: rem(10);
+                    }
+    
+                }
             }
         }
+
     }
 
 }
@@ -215,26 +226,6 @@
 
 
 .team-accordeon__item_active {
-
-    .team-accordeon__text {
-        height: auto ;
-        opacity: 1;
-        margin-top: 2%;
-        margin-bottom: 6.5%;
-
-        @include tablet {
-            margin-top: 3%;
-            margin-bottom: 6.5%; 
-        }
-
-        @include tablet {
-            margin-top: 4%;
-            margin-bottom: 9.5%; 
-        }
-
-
-
-    }
 
     .team-accordeon__trigger {
         color: $yellow;
@@ -244,11 +235,6 @@
           }
     }
 }
-
-
-
-
-
 
 
 

@@ -54,8 +54,8 @@
                             </div>
                             <div class="menu-buttons">
                                 <button class="order-button">Заказать</button>
-                                <div class="hamburger-menu-link menu-link" id="menu-link" >
-                                    <div class="hamburger-menu-link__bars menu-link__block" ></div>
+                                <div class="hamburger-menu-link menu-link" id="menu-link">
+                                    <div class="hamburger-menu-link__bars menu-link__block"></div>
                                 </div>
                                 <div class="hidden-menu" id="hidden-menu">
                                     <div class="container_hidden-menu">
@@ -70,12 +70,24 @@
                                             </div>
                                         </div>
                                         <ul class="hidden-menu__list">
-                                            <li class="hidden-menu__item"><a href="">Почему мы</a></li>
-                                            <li class="hidden-menu__item"><a href="">Меню</a> </li>
-                                            <li class="hidden-menu__item"><a href=""> Советы</a></li>
-                                            <li class="hidden-menu__item"><a href="">Кто мы</a></li>
-                                            <li class="hidden-menu__item"><a href="">Свяжитесь с нами</a></li>
-                                            <li class="hidden-menu__item"><a href=""> Контакты</a></li>
+                                            <li class="hidden-menu__item">
+                                                <a href="">Почему мы</a>
+                                            </li>
+                                            <li class="hidden-menu__item">
+                                                <a href="">Меню</a>
+                                            </li>
+                                            <li class="hidden-menu__item">
+                                                <a href=""> Советы</a>
+                                            </li>
+                                            <li class="hidden-menu__item">
+                                                <a href="">Кто мы</a>
+                                            </li>
+                                            <li class="hidden-menu__item">
+                                                <a href="">Свяжитесь с нами</a>
+                                            </li>
+                                            <li class="hidden-menu__item">
+                                                <a href=""> Контакты</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -166,7 +178,7 @@
                             <div class="burgers-picture__img" style="background-image:url(pictures/pictures/black_beef.png)">
                                 <img src="./pictures/pictures/black_beef.png" alt="Dark Beef Burger" class="visuallyhidden">
                             </div>
-                            <div class="burgers-picture__composition">
+                            <div class="burgers-picture__composition" id="burgers-picture__composition">
                                 <svg class="burgers-picture__composition-img">
                                     <use xlink:href="pictures/icons/sprite/sprite.svg#burger" />
                                 </svg>
@@ -182,7 +194,7 @@
                                 <div class="burgers-picture__kkal-number">1200</div>
                                 <div class="burgers-picture__kkal-text">ккал</div>
                             </div>
-                            <div class="composition-droptitle">
+                            <div class="composition-droptitle" id="composition-droptitle">
                                 <ul class="composition-list">
                                     <li class="composition-list__item">
                                         <div class="composition-list__item-img">
@@ -192,8 +204,10 @@
                                         </div>
                                         <div class="composition-list__item-name">Говядина</div>
                                         <div class="composition-list__item-weight">300 г</div>
-                                        <div class="composition-list__item-close">
-                                            <img src="./pictures/icons/close.svg" alt="Закрыть">
+                                        <div class="composition-list__item-close" id="composition-list__item-close">
+                                            <svg class="composition-list__item-close-svg">
+                                                <use xlink:href="pictures/icons/sprite/handmade-sprite.svg#close" />
+                                            </svg>
                                         </div>
                                     </li>
                                     <li class="composition-list__item">
@@ -274,61 +288,73 @@
                     <div class="team-content">
                         <h2 class="section-title section-title_team">Команда</h2>
                         <ul class="team-accordeon">
-                            <li class="team-accordeon__item">
+                            <li class="team-accordeon__item ">
                                 <a class="team-accordeon__trigger">Даниэл Редклиф</a>
-                                <div class="team-accordeon__text  ">
-                                    <div class="team-accordeon__pic">
-                                        <div class="team-accordeon__pic-img " style="background-image:url(pictures/backgrounds/team/2.jpg)"></div>
-                                    </div>
-                                    <div class="team-accordeon__description">
-                                        <div class="team-accordeon__description-position">Оператор</div>
-                                        <div class="team-accordeon__description-about">
-                                            <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                <div class="team-accordeon__content">
+                                    <div class="team-accordeon__text">
+                                        <div class="team-accordeon__pic">
+                                            <div class="team-accordeon__pic-img " style="background-image:url(pictures/backgrounds/team/2.jpg)"></div>
+                                        </div>
+                                        <div class="team-accordeon__description">
+                                            <div class="team-accordeon__description-position">Оператор</div>
+                                            <div class="team-accordeon__description-about">
+                                                <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </li>
-                            <li class="team-accordeon__item  team-accordeon__item_active">
+                            <li class="team-accordeon__item  ">
                                 <a class="team-accordeon__trigger">Ричард Джеймс</a>
-                                <div class="team-accordeon__text ">
-                                    <div class="team-accordeon__pic">
-                                        <div class="team-accordeon__pic-img " style="background-image:url(pictures/backgrounds/team/2.jpg)"></div>
-                                    </div>
-                                    <div class="team-accordeon__description">
-                                        <div class="team-accordeon__description-position">Оператор</div>
-                                        <div class="team-accordeon__description-about">
-                                            <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                <div class="team-accordeon__content">
+                                    <div class="team-accordeon__text ">
+                                        <div class="team-accordeon__pic">
+                                            <div class="team-accordeon__pic-img " style="background-image:url(pictures/backgrounds/team/2.jpg)"></div>
+                                        </div>
+                                        <div class="team-accordeon__description">
+                                            <div class="team-accordeon__description-position">Оператор</div>
+                                            <div class="team-accordeon__description-about">
+                                                <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </li>
                             <li class="team-accordeon__item">
                                 <a class="team-accordeon__trigger">Джейк Финн</a>
-                                <div class="team-accordeon__text ">
-                                    <div class="team-accordeon__pic">
-                                        <div class="team-accordeon__pic-img " style="background-image:url(pictures/backgrounds/team/2.jpg)"></div>
-                                    </div>
-                                    <div class="team-accordeon__description">
-                                        <div class="team-accordeon__description-position">Оператор</div>
-                                        <div class="team-accordeon__description-about">
-                                            <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                <div class="team-accordeon__content">
+                                    <div class="team-accordeon__text ">
+                                        <div class="team-accordeon__pic">
+                                            <div class="team-accordeon__pic-img " style="background-image:url(pictures/backgrounds/team/2.jpg)"></div>
+                                        </div>
+                                        <div class="team-accordeon__description">
+                                            <div class="team-accordeon__description-position">Оператор</div>
+                                            <div class="team-accordeon__description-about">
+                                                <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </li>
                             <li class="team-accordeon__item">
                                 <a class="team-accordeon__trigger">Николай Иванов</a>
-                                <div class="team-accordeon__text ">
-                                    <div class="team-accordeon__pic">
-                                        <div class="team-accordeon__pic-img " style="background-image:url(pictures/backgrounds/team/2.jpg)"></div>
-                                    </div>
-                                    <div class="team-accordeon__description">
-                                        <div class="team-accordeon__description-position">Оператор</div>
-                                        <div class="team-accordeon__description-about">
-                                            <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                <div class="team-accordeon__content">
+                                    <div class="team-accordeon__text ">
+                                        <div class="team-accordeon__pic">
+                                            <div class="team-accordeon__pic-img " style="background-image:url(pictures/backgrounds/team/2.jpg)"></div>
+                                        </div>
+                                        <div class="team-accordeon__description">
+                                            <div class="team-accordeon__description-position">Оператор</div>
+                                            <div class="team-accordeon__description-about">
+                                                <p> С радостью поможет подобрать идеальный бургер и оформить заказ. </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </li>
                         </ul>
                     </div>
@@ -340,7 +366,7 @@
                     <h2 class="section-title section-title_color_white section-title">Меню</h2>
                     <ul class="menu-accordeon">
                         <li class="menu-accordeon__item ">
-                            <a class="menu-accordeon__trigger 1 " href="#" style="background-image:url(pictures/backgrounds/menu/1.jpg)">
+                            <a class="menu-accordeon__trigger  " href="#" style="background-image:url(pictures/backgrounds/menu/1.jpg)">
                                 <div class=" menu-accordeon__trigger-title">Для мясоедов</div>
                             </a>
                             <div class="menu-accordeon__text">
@@ -355,7 +381,7 @@
                             </div>
                         </li>
                         <li class="menu-accordeon__item ">
-                            <a class=" menu-accordeon__trigger 2" href="#" style="background-image:url(pictures/backgrounds/menu/2.jpg)">
+                            <a class=" menu-accordeon__trigger " href="#" style="background-image:url(pictures/backgrounds/menu/2.jpg)">
                                 <div class="menu-accordeon__trigger-title ">Вегетарианское</div>
                             </a>
                             <div class="menu-accordeon__text">
@@ -369,7 +395,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="menu-accordeon__item 3">
+                        <li class="menu-accordeon__item ">
                             <a class="menu-accordeon__trigger " href="#" style="background-image: url(pictures/backgrounds/menu/3.jpg)">
                                 <div class="menu-accordeon__trigger-title ">Диетическое</div>
                             </a>
@@ -699,6 +725,7 @@
         </ul>
     </aside>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="./js/js-map-style.js"></script>
     <script src="./js/main.js"></script>

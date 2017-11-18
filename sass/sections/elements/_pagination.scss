@@ -17,6 +17,7 @@
         width: rem(16);
         height: rem(16);
         margin-bottom: rem(7);
+        cursor: pointer;
 
         &_active {
           border: rem(1) solid white;

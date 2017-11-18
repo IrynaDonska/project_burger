@@ -6,9 +6,10 @@
     height: rem(332); 
     width: rem(270) ; //55.5%
     position: absolute;
-    top: 0;
-    left: rem(-9999);
+    top: rem(0);
+    left: rem(90);
     z-index: 10;
+    display: none;
 
 
 
@@ -88,21 +89,22 @@
                 height: rem(18);
                 display: none;
 
+                &-svg {
+                    width: rem(18);
+                    height: rem(18);
+                    fill:#eb8262;   
+                }
+
                 @include tablet {
                     display: flex; 
                     margin-top: rem(-11);
-                    margin-left: 9.345%;//30
+                    margin-left: 9.345%;
                 }
 
                 @include phone { 
-                    margin-left: 21.621%;//80
+                    margin-left: 21.621%;
                 }
 
-
-                .img {
-                    width: rem(18);
-                    height: rem(18);
-                }
 
 
 
@@ -116,17 +118,10 @@
 }
 
 
-.burgers-picture__composition:hover ~ .composition-droptitle {
+
+/*.composition-droptitle_active {
     left: rem(90);
 
-    @include tablet {
-        left: rem(90);
-    
-    }
-    
-    @include phone {
-        left: rem(90);
+}*/
 
-    }
 
-}

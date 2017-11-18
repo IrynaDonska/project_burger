@@ -92,10 +92,12 @@ bottom: rem(0);
     &__text{
         height: 100%;
         width: 0;
-        overflow: hidden;
         background-color: $dark;
         opacity: 0.93;
         display:flex ;
+        overflow: hidden;
+
+
         
 
     }
@@ -133,23 +135,29 @@ bottom: rem(0);
         color: $yellow;
     }
                     
-    .menu-accordeon__text {
+     /* .menu-accordeon__text {
         width: rem(540);
         
-        @include tablet {
+      @include tablet {
             width: rem(530);
         }
         
         @include phone {
             width: rem(400); 
         }
-    }
+    }*/
+    
 
     .menu-accordeon__paragraph {
         display: flex;
     }
     
 }
+
+
+
+
+
 
 
 

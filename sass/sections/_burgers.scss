@@ -170,10 +170,10 @@
             }
 
 
-            &:hover {
+           /* &:hover {
                 background: $orange;
                 transition: 0.5s;
-            }
+            }*/
 
             &-text {
                 @include gagalin-title;
@@ -184,6 +184,9 @@
         }
 
 
+
+
+        
 
         &__kkal {
             position: absolute;
@@ -327,6 +330,7 @@
         }
     }
 }
+
 
 
 
