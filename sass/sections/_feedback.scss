@@ -143,7 +143,7 @@
             }
 
 
-            .feedback__button-button {
+            .feedback__button {
                 @include order-button;
                 background: $dark;
                 width: rem(110);
@@ -165,7 +165,6 @@
 }
 
 
-
 .feedback__item:hover .feedback__text {
     opacity: 1;
     transition: opacity 1s;
@@ -173,8 +172,35 @@
 }
 
 
+.feedback__button-more {
+    display: none;
+    padding: rem(30) rem(20);
+    width: rem(460);
+    border-radius: rem(5);
 
-
+    @include phone {
+        width: 95%; 
+    }
+    
+    &-title {
+        @include gagalin-title;
+        font-size: rem(14);
+        line-height: 2.0079em;
+        color: $dark;
+        margin-bottom: rem(30);
+        text-transform: uppercase;
+    }
+    
+    &-text {
+        font-family: 'ubuntulight';
+        font-weight: normal;
+        font-style: normal;
+        font-size: rem(14);
+        line-height: 1.7142em;
+        color: $dark;
+    
+    }
+}
 
 
 

@@ -143,7 +143,15 @@ $(function () {
     })
 })
 
+//FancyBox feedback
+$(function () {
 
+    $("[data-fancybox-feedback]").fancybox({
+        overlayColor: '#2f3234' ,
+        overlayOpacity: 0.92 ,
+    
+	});
 
+})
 
 

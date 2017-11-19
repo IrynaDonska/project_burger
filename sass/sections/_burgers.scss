@@ -1,13 +1,18 @@
 .burgers {
     background: url("./../pictures/backgrounds/burgers-linear-grad.svg") center center no-repeat;
     display: flex;
+    align-items: center;
+    justify-content: center;
+
 
     .container_burgers {
         display: flex;
         flex-direction: row;
         align-items: center;
         position: relative;
-        
+
+
+       
         @include tablet {
             padding-left: 8.073%;
             padding-right: 8.073%;
@@ -58,24 +63,39 @@
 
 
 .burgers-content {
-    display: flex;
-    flex-direction: row;
+    //overflow: hidden;
+
+
     
 
-    @include tablet {
-        flex-direction: column;
-        padding-left: 9.073%;
-        padding-right: 9.073%;
+    .burgers-list {
+        display: flex;
+        }
+        
+        .burgers-item {
+            display: flex;
+            width: rem(940);
 
-    }
 
-    @include phone {
-        padding-left: 0;
-        padding-right: 0;
+            @include tablet {
+                flex-direction: column;
+                padding-left: 9.073%;
+                padding-right: 9.073%;
+        
+            }
+        
+            @include phone {
+                padding-left: 0;
+                padding-right: 0;
+        
+            }
+        }
+        
+   
 
-    }
-    
-    
+
+
+
     .burgers-picture {
         width: 52%;
         position: relative;      
