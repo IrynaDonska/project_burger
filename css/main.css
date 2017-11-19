@@ -552,6 +552,10 @@ input:focus, textarea:focus {
   @media screen and (max-width: 480px) {
     .composition-droptitle {
       width: 79%; } }
+  @media screen and (max-width: 360px) {
+    .composition-droptitle {
+      padding: 0.625rem;
+      width: 73%; } }
   .composition-droptitle .composition-list {
     display: -webkit-box;
     display: -webkit-flex;
@@ -584,6 +588,9 @@ input:focus, textarea:focus {
       line-height: 1.714em;
       color: #2f3234;
       text-transform: none; }
+      @media screen and (max-width: 360px) {
+        .composition-droptitle .composition-list .composition-list__item {
+          font-size: 0.625rem; } }
       .composition-droptitle .composition-list .composition-list__item-img {
         margin-right: 8%; }
         @media screen and (max-width: 768px) {
@@ -592,6 +599,9 @@ input:focus, textarea:focus {
         @media screen and (max-width: 480px) {
           .composition-droptitle .composition-list .composition-list__item-img {
             margin-right: 5.4%; } }
+        @media screen and (max-width: 360px) {
+          .composition-droptitle .composition-list .composition-list__item-img {
+            margin-right: 2%; } }
       .composition-droptitle .composition-list .composition-list__item-name {
         width: 4.0625rem;
         margin-right: 27%; }
@@ -601,6 +611,9 @@ input:focus, textarea:focus {
         @media screen and (max-width: 480px) {
           .composition-droptitle .composition-list .composition-list__item-name {
             margin-right: 16.216%; } }
+        @media screen and (max-width: 360px) {
+          .composition-droptitle .composition-list .composition-list__item-name {
+            margin-right: 7%; } }
       .composition-droptitle .composition-list .composition-list__item-weight {
         width: 2.1875rem;
         font-family: 'ubuntulight';
@@ -624,6 +637,9 @@ input:focus, textarea:focus {
         @media screen and (max-width: 480px) {
           .composition-droptitle .composition-list .composition-list__item-close {
             margin-left: 21.621%; } }
+        @media screen and (max-width: 360px) {
+          .composition-droptitle .composition-list .composition-list__item-close {
+            margin-left: 10%; } }
 
 /*.composition-droptitle_active {
     left: rem(90);
@@ -1244,7 +1260,7 @@ input:focus, textarea:focus {
   top: 0rem;
   right: 0rem;
   bottom: 0rem;
-  height: 100%; }
+  height: 100vh; }
   .menu-accordeon__item {
     height: 100%;
     display: -webkit-box;
@@ -1316,7 +1332,8 @@ input:focus, textarea:focus {
     color: #ffffff;
     width: 100%;
     padding: 9.23% 2.73%;
-    display: none; }
+    display: none;
+    overflow: hidden; }
     @media screen and (max-width: 768px) {
       .menu-accordeon__paragraph {
         padding: 5.9% 3.9%; } }

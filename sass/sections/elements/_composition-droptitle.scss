@@ -22,8 +22,15 @@
     @include phone { 
         width: 79%; // rem(370)
         
+    }
+
+    @include iphone { 
+        padding: rem(10) ;  
+        width: 73%; 
+
         
     }
+
 
 
 
@@ -45,6 +52,10 @@
             color: $dark;
             text-transform: none;
 
+            @include iphone {
+                font-size: rem(10);
+            }
+
 
     
             &-img {
@@ -57,7 +68,13 @@
                 @include phone { 
                     margin-right: 5.4%; 
                 }
+
+                @include iphone { 
+                    margin-right: 2%; 
+                }
+            
             }
+
 
 
 
@@ -72,6 +89,11 @@
                 @include phone { 
                     margin-right: 16.216%; 
                 }
+
+                @include iphone { 
+                    margin-right: 7%; 
+                }
+
 
                
 
@@ -104,6 +126,12 @@
                 @include phone { 
                     margin-left: 21.621%;
                 }
+
+                @include iphone { 
+                    margin-left: 10%; 
+                }
+
+
 
 
 
