@@ -73,7 +73,8 @@
     }
 
     @include iphone {
-        margin-bottom: rem(50);
+        margin-bottom: rem(20);
+
     }
 
 }
@@ -98,10 +99,8 @@
     }
 
     @include iphone {
-        margin-bottom: rem(20);
+        margin-bottom: rem(10);
     }
-
-
 
 
     .team-accordeon__trigger {
@@ -134,7 +133,7 @@
         }
 
         @include iphone {
-            font-size: rem(20);
+            font-size: rem(15);
 
         }
 
@@ -161,9 +160,14 @@
 
             @include phone {
                 padding-top: 4%;
-   
+            }
+
+            @include iphone {
+                padding-top: 2%;
             }
     
+    
+
 
             .team-accordeon__pic {
                 text-align: center;
@@ -178,9 +182,8 @@
                 }
     
                 @include iphone { 
-                    margin-bottom: rem(10);
+                    margin-bottom: rem(5);
                 }
-    
     
                 &-img {
                     width: rem(100);
@@ -212,7 +215,8 @@
                     }
     
                     @include iphone {
-                        margin-bottom: rem(10);
+                        margin-bottom: rem(5);
+                        font-size: rem(12);
                     }
     
                 }

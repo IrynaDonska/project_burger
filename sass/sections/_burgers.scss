@@ -99,12 +99,12 @@
         
 
         @include iphone {
-            height: rem(300);
-            margin-bottom: rem(20);
-
+            height: rem(250);
+            margin-bottom: rem(15);
 
         }
         
+
 
         &__img {
             height: rem(315);
@@ -128,7 +128,7 @@
 
 
             @include iphone {
-                height: rem(200);
+                height: rem(150);
                 margin-top: rem(100);
 
             }
@@ -170,11 +170,6 @@
             }
 
 
-           /* &:hover {
-                background: $orange;
-                transition: 0.5s;
-            }*/
-
             &-text {
                 @include gagalin-title;
                 font-size: rem(14);
@@ -207,6 +202,11 @@
             @include phone {
                 left: 86%;
             }
+
+            @include iphone {
+                left: 80%;
+            }
+
 
 
             &-number{
@@ -254,6 +254,14 @@
                 margin-right: 19.8%;
             }
 
+            @include iphone {
+                line-height: 1em;
+                margin-left: 19.8%;
+                margin-right: 19.8%;
+                font-size: rem(30);
+
+            }
+
         }
 
         
@@ -285,7 +293,8 @@
 
             @include iphone {
                 margin-bottom: rem(15);
-                margin-top: rem(20); 
+                margin-top: rem(5); 
+                font-size: rem(10);
             }
 
 

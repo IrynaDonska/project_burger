@@ -20,12 +20,14 @@
         }
 
         @include iphone {
-            left: 8%;
+            left: 1%;
+            font-size: rem(25);
         }
 
     }
     
 }
+
 
 
 
@@ -37,6 +39,7 @@ flex-direction: row;
 top: rem(0);
 right: rem(0);
 bottom: rem(0);
+height: 100%;
 
 
     &__item {
@@ -135,18 +138,6 @@ bottom: rem(0);
         color: $yellow;
     }
                     
-     /* .menu-accordeon__text {
-        width: rem(540);
-        
-      @include tablet {
-            width: rem(530);
-        }
-        
-        @include phone {
-            width: rem(400); 
-        }
-    }*/
-    
 
     .menu-accordeon__paragraph {
         display: flex;

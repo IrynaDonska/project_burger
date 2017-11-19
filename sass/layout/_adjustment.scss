@@ -72,9 +72,10 @@ input:focus,  textarea:focus {
     }
 
     @include iphone {
-        font-size: rem(40);
+        font-size: rem(30);
     }
 
+    
     
 
     &_color {

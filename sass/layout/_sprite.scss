@@ -77,8 +77,14 @@
 .reason__img-sprite {
   width: rem(100);
   height: rem(100);
+
+  @include iphone {
+    width: rem(80);
+    height: rem(80);
+  }
   
 
+  
   &_meat{
     fill: $orange;
     

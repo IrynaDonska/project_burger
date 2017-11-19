@@ -21,7 +21,7 @@
     }
 
     @include iphone {
-        margin: 10% 19.8% 3% 19.8%;
+        margin: 3% 19.8% 3% 19.8%;
     }
 
 }
@@ -29,7 +29,11 @@
 
 
 
+
 .form {
+    @include iphone {
+        font-size: rem(13);
+    }
 
     &__content {
         display: flex;
@@ -66,7 +70,7 @@
         margin-bottom: rem(15);
 
         @include iphone {
-            margin-bottom: rem(5); 
+            margin-bottom: rem(3); 
         }
 
 
@@ -78,7 +82,7 @@
             }
 
             @include iphone {
-                margin-bottom: rem(10); 
+                margin-bottom: rem(7); 
             }
         }
 
@@ -91,7 +95,7 @@
             }
 
             @include iphone {
-                margin-bottom: rem(10); 
+                margin-bottom: rem(7); 
             }
 
 
@@ -108,7 +112,7 @@
             }  
 
             @include iphone {
-                margin-bottom: rem(15); 
+                margin-bottom: rem(10); 
             }
 
         }
@@ -176,6 +180,11 @@
        height: rem(35);
        cursor: pointer;
 
+       @include iphone {
+        height: rem(30); 
+       }
+
+
    }
 
     &__textarea {
@@ -187,8 +196,12 @@
         height: rem(114); 
         cursor: pointer;
 
+        @include iphone {
+            height: rem(100); 
+        }
 
     }
+
 
     &__block-title_pay {
         margin-right: rem(15);

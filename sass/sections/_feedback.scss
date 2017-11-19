@@ -88,10 +88,12 @@
                 margin: 25% 10% 25% 10%;  
             }
 
-            @include phone {
-                margin: 20% 10% 20% 10%;  
+            @include iphone {
+                margin: 10% 10% 10% 10%;  
             }
     
+
+
 
             
 

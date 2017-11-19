@@ -101,6 +101,7 @@ $(function () {
         const screenWidth = $(window).width();
         const bigMenu = 540;
         const smallWidth = screenWidth - 240
+        const smallWidthPhone = screenWidth - 80
         
 
         if (!itemMenu.hasClass('menu-accordeon__item_active')) {
@@ -115,9 +116,18 @@ $(function () {
                 textMenu.css({
                     'width' : bigMenu
                 })
-            } else {
+            } else if (screenWidth <= 768){
                 textMenu.css({
                     'width' : smallWidth
+                }) 
+     
+            } else if (screenWidth > 480) {
+                textMenu.css({
+                    'width' : smallWidth
+                }) 
+            } else {
+                textMenu.css({
+                    'width' : smallWidthPhone
                 }) 
             }
             

@@ -30,7 +30,11 @@
     @include phone {
         margin-top: 10.5%;
         margin-bottom: 15.625%;
+    }
 
+    @include iphone {
+        margin-top: 8.5%;
+        margin-bottom: 8.5%;
     }
 }
 
@@ -45,8 +49,6 @@
         flex-direction: column;
         margin-left: 4.17%;
         margin-right: 2.09%;
-        
-
     }
 
     .reason {
@@ -69,6 +71,11 @@
             margin-bottom: 6.875%;
        }
 
+       @include iphone {
+        margin-bottom: 4%;
+   }
+
+   
 
 
         &__img {
@@ -98,11 +105,12 @@
             }
 
             @include iphone {
-                margin-bottom: rem(13);
-                font-size: rem(20);
+                margin-bottom: rem(8);
+                font-size: rem(16);
 
             }
             
+
 
         }
 
@@ -116,6 +124,12 @@
 
             @include iphone {
                 font-size: rem(12);
+
+            }
+
+            @include iphone {
+                font-size: rem(10);
+
 
             }
         }
