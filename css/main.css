@@ -248,7 +248,7 @@ input:focus, textarea:focus {
       height: 3.75rem; } }
   @media screen and (max-width: 480px) {
     .footer {
-      height: 7.1875rem; } }
+      height: 9.375rem; } }
   .footer .container_map {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
