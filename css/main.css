@@ -49,13 +49,19 @@ p {
 .wrapper {
   position: relative;
   width: 100%;
-  /*min-width: rem(960);*/
-  min-height: 100%;
+  height: 100%;
   overflow: hidden; }
 
 .maincontent {
   height: 100%;
-  min-height: 40.625rem; }
+  min-height: 40.625rem;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  will-change: transform; }
+  @media screen and (max-width: 768px) {
+    .maincontent {
+      min-height: auto; } }
 
 .container {
   width: 95%;
@@ -72,7 +78,7 @@ p {
   flex-direction: column; }
 
 .section {
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.31); }
 
 a {
@@ -733,20 +739,21 @@ input:focus, textarea:focus {
   .hidden-menu__list a {
     color: #ffffff; }
 
-.hidden-menu__item::after {
-  content: "";
-  display: block;
-  width: 0.4375rem;
-  height: 0.4375rem;
-  border-radius: 50%;
-  background: #ffffff;
-  margin: 1.75rem auto; }
-  @media screen and (max-width: 360px) {
-    .hidden-menu__item::after {
-      margin: 0.9375rem auto; } }
-
-.hidden-menu__item:last-child::after {
-  display: none; }
+.hidden-menu__item {
+  cursor: pointer; }
+  .hidden-menu__item::after {
+    content: "";
+    display: block;
+    width: 0.4375rem;
+    height: 0.4375rem;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: 1.75rem auto; }
+    @media screen and (max-width: 360px) {
+      .hidden-menu__item::after {
+        margin: 0.9375rem auto; } }
+  .hidden-menu__item:last-child::after {
+    display: none; }
 
 .hidden-menu_active {
   display: block; }
@@ -766,20 +773,20 @@ input:focus, textarea:focus {
   -ms-flex-pack: center;
   justify-content: center; }
   .burgers .container_burgers {
+    position: relative;
+    height: 29.375rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    position: relative; }
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     @media screen and (max-width: 768px) {
       .burgers .container_burgers {
         padding-left: 8.073%;
@@ -789,39 +796,10 @@ input:focus, textarea:focus {
         padding-left: 0;
         padding-right: 0; } }
 
-.button-burgers {
-  position: absolute; }
-  .button-burgers_left {
-    left: -2.5rem; }
-    @media screen and (max-width: 768px) {
-      .button-burgers_left {
-        left: 0.75rem; } }
-    @media screen and (max-width: 480px) {
-      .button-burgers_left {
-        left: 0rem; } }
-  .button-burgers_right {
-    right: -2.5rem; }
-    @media screen and (max-width: 768px) {
-      .button-burgers_right {
-        right: 0.75rem; } }
-    @media screen and (max-width: 480px) {
-      .button-burgers_right {
-        right: 0rem; } }
-
-.burgers-content .burgers-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
-.burgers-content .burgers-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 58.75rem; }
+.burgers__item {
+  display: none; }
   @media screen and (max-width: 768px) {
-    .burgers-content .burgers-item {
+    .burgers__item {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
@@ -830,52 +808,58 @@ input:focus, textarea:focus {
       padding-left: 9.073%;
       padding-right: 9.073%; } }
   @media screen and (max-width: 480px) {
-    .burgers-content .burgers-item {
+    .burgers__item {
       padding-left: 0;
       padding-right: 0; } }
 
-.burgers-content .burgers-picture {
+.button-burgers {
+  z-index: 10;
+  position: absolute; }
+  .button-burgers_left {
+    left: -3%; }
+  .button-burgers_right {
+    right: -3%; }
+
+.burgers-picture {
   width: 52%;
   position: relative;
-  margin-right: -0.375rem;
   height: 29.375rem; }
   @media screen and (max-width: 768px) {
-    .burgers-content .burgers-picture {
+    .burgers-picture {
       width: 100%;
       height: 24.375rem;
       margin-right: 0;
       margin-bottom: 9%; } }
   @media screen and (max-width: 480px) {
-    .burgers-content .burgers-picture {
+    .burgers-picture {
       height: 22.5rem;
       margin-bottom: 7%; } }
   @media screen and (max-width: 360px) {
-    .burgers-content .burgers-picture {
+    .burgers-picture {
       height: 15.625rem;
       margin-bottom: 0.9375rem; } }
-  .burgers-content .burgers-picture__img {
-    height: 19.6875rem;
+  .burgers-picture__img {
+    height: 100%;
     background-position: center left;
     background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 4.375rem; }
+    background-size: contain; }
     @media screen and (max-width: 768px) {
-      .burgers-content .burgers-picture__img {
+      .burgers-picture__img {
         margin-top: 4.6875rem;
         background-position: center center; } }
     @media screen and (max-width: 480px) {
-      .burgers-content .burgers-picture__img {
+      .burgers-picture__img {
         height: 15.875rem;
         margin-top: 6.875rem;
         background-position: center center; } }
     @media screen and (max-width: 360px) {
-      .burgers-content .burgers-picture__img {
+      .burgers-picture__img {
         height: 9.375rem;
         margin-top: 6.25rem; } }
-    .burgers-content .burgers-picture__img img {
+    .burgers-picture__img img {
       width: 100%;
       margin-top: 14.9%; }
-  .burgers-content .burgers-picture__composition {
+  .burgers-picture__composition {
     position: absolute;
     left: 0;
     top: 0;
@@ -902,14 +886,14 @@ input:focus, textarea:focus {
     align-items: center;
     cursor: pointer; }
     @media screen and (max-width: 768px) {
-      .burgers-content .burgers-picture__composition {
+      .burgers-picture__composition {
         width: 5.625rem;
         height: 5.625rem; } }
     @media screen and (max-width: 480px) {
-      .burgers-content .burgers-picture__composition {
+      .burgers-picture__composition {
         width: 5.625rem;
         height: 5.625rem; } }
-    .burgers-content .burgers-picture__composition-text {
+    .burgers-picture__composition-text {
       font-family: 'gagalinregular';
       font-weight: normal;
       font-style: normal;
@@ -920,7 +904,7 @@ input:focus, textarea:focus {
       font-size: 0.875rem;
       line-height: 2em;
       color: #ffffff; }
-  .burgers-content .burgers-picture__kkal {
+  .burgers-picture__kkal {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -940,16 +924,16 @@ input:focus, textarea:focus {
     width: 3.75rem;
     height: 4.6875rem; }
     @media screen and (max-width: 768px) {
-      .burgers-content .burgers-picture__kkal {
+      .burgers-picture__kkal {
         top: 0;
         left: 85%; } }
     @media screen and (max-width: 480px) {
-      .burgers-content .burgers-picture__kkal {
+      .burgers-picture__kkal {
         left: 86%; } }
     @media screen and (max-width: 360px) {
-      .burgers-content .burgers-picture__kkal {
+      .burgers-picture__kkal {
         left: 80%; } }
-    .burgers-content .burgers-picture__kkal-number {
+    .burgers-picture__kkal-number {
       font-family: 'gagalinregular';
       font-weight: normal;
       font-style: normal;
@@ -963,7 +947,7 @@ input:focus, textarea:focus {
       opacity: 0.5;
       position: absolute;
       top: 2.5rem; }
-    .burgers-content .burgers-picture__kkal-text {
+    .burgers-picture__kkal-text {
       font-family: 'gagalinregular';
       font-weight: normal;
       font-style: normal;
@@ -976,10 +960,10 @@ input:focus, textarea:focus {
       color: #ffffff;
       opacity: 0.5; }
 
-.burgers-content .burgers-description {
+.burgers-description {
   width: 48%; }
   @media screen and (max-width: 768px) {
-    .burgers-content .burgers-description {
+    .burgers-description {
       width: 100%;
       display: -webkit-box;
       display: -webkit-flex;
@@ -996,20 +980,20 @@ input:focus, textarea:focus {
       align-items: center;
       text-align: center; } }
   @media screen and (max-width: 768px) {
-    .burgers-content .burgers-description .section-title {
+    .burgers-description .section-title {
       margin-left: -3%; } }
   @media screen and (max-width: 480px) {
-    .burgers-content .burgers-description .section-title {
+    .burgers-description .section-title {
       line-height: 1.2em;
       margin-left: 19.8%;
       margin-right: 19.8%; } }
   @media screen and (max-width: 360px) {
-    .burgers-content .burgers-description .section-title {
+    .burgers-description .section-title {
       line-height: 1em;
       margin-left: 19.8%;
       margin-right: 19.8%;
       font-size: 1.875rem; } }
-  .burgers-content .burgers-description__text {
+  .burgers-description__text {
     color: #ffffff;
     font-family: 'ubuntulight';
     font-weight: normal;
@@ -1019,22 +1003,22 @@ input:focus, textarea:focus {
     margin-top: 2.375rem;
     margin-bottom: 1.875rem; }
     @media screen and (max-width: 768px) {
-      .burgers-content .burgers-description__text {
+      .burgers-description__text {
         margin-top: 3.929%;
         margin-bottom: 8%;
         margin-left: -8.073%;
         margin-right: -8.073%; } }
     @media screen and (max-width: 480px) {
-      .burgers-content .burgers-description__text {
+      .burgers-description__text {
         margin-bottom: 1.5625rem;
         margin-left: 2.083%;
         margin-right: 2.083%; } }
     @media screen and (max-width: 360px) {
-      .burgers-content .burgers-description__text {
+      .burgers-description__text {
         margin-bottom: 0.9375rem;
         margin-top: 0.3125rem;
         font-size: 0.625rem; } }
-  .burgers-content .burgers-description__price {
+  .burgers-description__price {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1048,7 +1032,7 @@ input:focus, textarea:focus {
     -webkit-align-items: baseline;
     -ms-flex-align: baseline;
     align-items: baseline; }
-    .burgers-content .burgers-description__price-text {
+    .burgers-description__price-text {
       font-family: 'gagalinregular';
       font-weight: normal;
       font-style: normal;
@@ -1060,21 +1044,21 @@ input:focus, textarea:focus {
       letter-spacing: -0.025em;
       margin-right: 1.875rem; }
       @media screen and (max-width: 480px) {
-        .burgers-content .burgers-description__price-text {
+        .burgers-description__price-text {
           font-size: 3.125rem;
           line-height: 0.56em; } }
       @media screen and (max-width: 360px) {
-        .burgers-content .burgers-description__price-text {
+        .burgers-description__price-text {
           font-size: 2.5rem;
           line-height: 0.56em; } }
-      .burgers-content .burgers-description__price-text-small {
+      .burgers-description__price-text-small {
         font-size: 1.875rem; }
         @media screen and (max-width: 480px) {
-          .burgers-content .burgers-description__price-text-small {
+          .burgers-description__price-text-small {
             font-size: 1.5rem;
             line-height: 1.167em; } }
         @media screen and (max-width: 360px) {
-          .burgers-content .burgers-description__price-text-small {
+          .burgers-description__price-text-small {
             font-size: 1.25rem; } }
 
 .section-title_feedback {
@@ -1264,7 +1248,8 @@ input:focus, textarea:focus {
 
 .map {
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 .menu {
   background: url("./../pictures/backgrounds/menu.jpg") center center no-repeat;
@@ -1298,10 +1283,10 @@ input:focus, textarea:focus {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  top: 0rem;
-  right: 0rem;
-  bottom: 0rem;
-  height: 100vh; }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%; }
   .menu-accordeon__item {
     height: 100%;
     display: -webkit-box;

@@ -80,6 +80,7 @@
     }
 
     &__item {
+        cursor: pointer;
 
         &::after {
             content: "";
@@ -89,6 +90,7 @@
             border-radius: 50%;
             background: $white;
             margin: rem(28) auto;
+            
 
             @include iphone {
                 margin: rem(15) auto;
