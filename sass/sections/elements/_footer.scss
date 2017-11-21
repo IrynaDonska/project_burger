@@ -15,7 +15,7 @@
 
 
     @include phone {
-        height: rem(150) ; 
+        height: rem(115) ; 
     }
 
     .container_map{
@@ -45,7 +45,7 @@
   
     }
 
-    
+
 
 
     &__contacts {
@@ -62,9 +62,6 @@
             align-items:  center;
         }
 
-        @include iphone {
-           font-size: rem(12);
-        }
 
 
 
@@ -73,10 +70,7 @@
 
     &__adress {
         margin-bottom: 0.77%;
-        
-        @include iphone {
-            margin-bottom: 0.4%;
-        }
+    
     }
 
     &__mobile {
@@ -99,10 +93,6 @@
         @include phone {
             justify-content: center;
             margin-top: 1.875%;
-        }
-
-        @include iphone {
-            margin-top: 1%;
         }
        
     }
