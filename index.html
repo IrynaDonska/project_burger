@@ -304,7 +304,7 @@
                                                 </svg>
                                             </div>
                                             <div class="composition-list__item-name">Говядина</div>
-                                            <div class="composition-list__item-weight">300 г</div>
+                                            <div class="composition-list__item-weight">500 г</div>
                                             <div class="composition-list__item-close" >
                                                 <svg class="composition-list__item-close-svg">
                                                     <use xlink:href="pictures/icons/sprite/handmade-sprite.svg#close" />
@@ -779,6 +779,11 @@
                                     редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
                                     анжамбеман. Наш современник стал особенно чутко относиться к слову.
                                 </div>
+                                <div class="menu-accordeon__close" >
+                                    <svg class="menu-accordeon__close-svg">
+                                        <use xlink:href="pictures/icons/sprite/handmade-sprite.svg#close" />
+                                    </svg>
+                                </div>
                             </div>
                         </li>
                         <li class="menu-accordeon__item ">
@@ -793,6 +798,11 @@
                                     метр. Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
                                     редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
                                     анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                </div>
+                                <div class="menu-accordeon__close" >
+                                    <svg class="menu-accordeon__close-svg">
+                                        <use xlink:href="pictures/icons/sprite/handmade-sprite.svg#close" />
+                                    </svg>
                                 </div>
                             </div>
                         </li>
@@ -809,12 +819,14 @@
                                     редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный
                                     анжамбеман. Наш современник стал особенно чутко относиться к слову.
                                 </div>
+                                <div class="menu-accordeon__close" >
+                                    <svg class="menu-accordeon__close-svg">
+                                        <use xlink:href="pictures/icons/sprite/handmade-sprite.svg#close" />
+                                    </svg>
+                                </div>
                             </div>
                         </li>
                     </ul>
-
-
-
                 </div>
             </section>
             <section class="section feedback">
@@ -1039,65 +1051,65 @@
                 <div class="container container_orderform ">
                     <h2 class="section-title section-title_position_center section-title_orderform">Закажите доставку</h2>
                     <div class="form">
-                        <form class="form__element">
+                        <form class="form__element" action="server.php" method="post" id="order-form">
                             <div class="form__content">
                                 <div class="form__column">
                                     <div class="form__row">
-                                        <label class="form__block">
-                                            <div class="form__block-title">Имя</div>
-                                            <input type="text" class="form__input">
+                                        <label class="form__block" for="name">
+                                            <div class="form__block-title" >Имя</div>
+                                            <input type="text" class="form__input" id="name">
                                         </label>
-                                        <label class="form__block">
-                                            <div class="form__block-title">Телефон</div>
-                                            <input type="text" class="form__input">
+                                        <label class="form__block" for="phone">
+                                            <div class="form__block-title" >Телефон</div>
+                                            <input type="text" class="form__input" id="phone">
                                         </label>
                                     </div>
                                     <div class="form__row">
-                                        <label class="form__block">
-                                            <div class="form__block-title">Улица</div>
-                                            <input type="text" class="form__input">
+                                        <label class="form__block" for="street">
+                                            <div class="form__block-title" for="street">Улица</div>
+                                            <input type="text" class="form__input" id="street">
                                         </label>
                                     </div>
                                     <div class="form__row ">
-                                        <label class="form__block">
-                                            <div class="form__block-title">Дом</div>
-                                            <input type="text" class="form__input">
+                                        <label class="form__block" for="house">
+                                            <div class="form__block-title" >Дом</div>
+                                            <input type="text" class="form__input" id="house">
                                         </label>
-                                        <label class="form__block">
-                                            <div class="form__block-title">Корпус</div>
-                                            <input type="text" class="form__input">
+                                        <label class="form__block" for="housing"> 
+                                            <div class="form__block-title" >Корпус</div>
+                                            <input type="text" class="form__input" id="housing"> 
                                         </label>
-                                        <label class="form__block form__block_flat">
-                                            <div class="form__block-title">Квартира</div>
-                                            <input type="text" class="form__input">
+                                        <label class="form__block form__block_flat" for="flat" >
+                                            <div class="form__block-title" >Квартира</div>
+                                            <input type="text" class="form__input" id="flat">
                                         </label>
-                                        <label class="form__block form__block_floor">
-                                            <div class="form__block-title">Этаж</div>
-                                            <input type="text" class="form__input">
+                                        <label class="form__block form__block_floor" for="floor">
+                                            <div class="form__block-title" >Этаж</div>
+                                            <input type="text" class="form__input" id="floor">
                                         </label>
                                     </div>
                                 </div>
 
                                 <div class="form__column">
                                     <div class="form__row form__row_textarea">
-                                        <label class="form__block form__block_textarea">
-                                            <div class="form__block-title">Комментарий</div>
-                                            <textarea class="form__textarea"></textarea>
+                                        <label class="form__block form__block_textarea" for="comment">
+                                            <div class="form__block-title" >Комментарий</div>
+                                            <textarea class="form__textarea" id="comment"></textarea>
                                         </label>
                                     </div>
 
                                     <div class="form__row form__row_pay">
                                         <div class="form__pay">
-                                            <input type="radio" name="payable" id="small-change" value="yes" class="form__pay-element visuallyhidden">
+                                            <input type="radio" name="payable" id="small-change"  class="form__pay-element visuallyhidden">
                                             <label for="small-change" class="form__block-title form__block-title_pay">Потребуется сдача</label>
-                                            <input type="radio" name="payable" id="credit-card" value="no" class="form__pay-element visuallyhidden">
+                                            <input type="radio" name="payable" id="credit-card"  class="form__pay-element visuallyhidden">
                                             <label for="credit-card" class="form__block-title form__block-title_pay">Оплата по карте</label>
                                         </div>
                                     </div>
 
                                     <div class="form__row form__row_call">
                                         <div class="form__call">
-                                            <input type="checkbox" name="callback" id="callback" value="no" class="form__call-element visuallyhidden">
+                                            <input type="checkbox" name="callback" id="callback" value="no-callback" class="form__call-element visuallyhidden">
                                             <label for="callback" class="form__block-title form__block-title_call">Не перезванивать</label>
                                         </div>
                                     </div>

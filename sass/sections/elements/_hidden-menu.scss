@@ -90,16 +90,26 @@
     &__item {
         cursor: pointer;
 
-        &::after {
-            content: "";
-            display: block;
-            width: rem(7);
-            height: rem(7);
-            border-radius: 50%;
-            background: $white;
-            margin: rem(28) auto;
-            
+        a {
+            &:hover {
+                color: $orange; 
+                transition: .5s;
 
+            }
+        }
+
+        
+    
+
+        &::after {
+        content: "";
+        display: block;
+        width: rem(7);
+        height: rem(7);
+        border-radius: 50%;
+        background: $white;
+        margin: rem(28) auto;
+            
             @include iphone {
                 margin: rem(10) auto;
                 
@@ -121,5 +131,6 @@
 .hidden-menu_active {
     display: block;
 }
+
 
 

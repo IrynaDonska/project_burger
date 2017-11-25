@@ -4,9 +4,19 @@ $(function () {
     let menuLink = document.getElementById('menu-link')
     let hiddenMenu = document.getElementById('hidden-menu')
     let closeMenu = document.getElementById('close-menu')
+    let hiddenMenuItem = document.querySelector('.hidden-menu__item')
+
+    
 
     menuLink.addEventListener('click', function () {
         hiddenMenu.classList.add('hidden-menu_active')
+        
+
+    })
+
+
+    $('.hidden-menu__item').on('click', e => {
+        hiddenMenu.classList.remove('hidden-menu_active')
     })
 
     closeMenu.addEventListener('click', function () {
@@ -18,21 +28,66 @@ $(function () {
 //composition-droptitle
 $(function () {
 
+    $('.burgers-picture__composition').on('click', e => {
+        const $pictureComp = $(e.currentTarget);
+        const siblingsBurgComp = $pictureComp.siblings(".composition-droptitle")
+        const screenWidth = $(window).width();
+        
+
+        if(screenWidth > 780) {
+            if (!siblingsBurgComp.hasClass('composition-droptitle_active')){
+                siblingsBurgComp.addClass('composition-droptitle_active')
+                $pictureComp.css({
+                    'background' : '#e35028'
+                })
+            } else {
+                siblingsBurgComp.removeClass('composition-droptitle_active')
+                $pictureComp.css({
+                    'background' : '#f08c33'
+                })
+            }
+        } else {
+            siblingsBurgComp.addClass('composition-droptitle_active')
+            $pictureComp.css({
+                'background' : '#e35028'
+            })
+
+        }
+
+       
+
+        $('.composition-list__item-close').on('click', e => {
+            siblingsBurgComp.removeClass('composition-droptitle_active')
+            $pictureComp.css({
+                'background' : '#f08c33'
+            })
+            $pictureComp.on('click') , () => {
+                return false
+            }
+        })
+        
+
+       
+       
+    }) 
+
+
 })
+
 
 
 //team accordeon
 $(function () {
-    $('.team-accordeon__trigger').on('click' , e => {
+    $('.team-accordeon__trigger').on('click', e => {
         e.preventDefault()
 
         const $this = $(e.currentTarget);
         const list = $this.closest('.team-accordeon');
         const item = $this.closest('.team-accordeon__item');
-        const items = $('.team-accordeon__item' , list);
-        const content = $('.team-accordeon__content' , item);
-        const allContent = $('.team-accordeon__content' , list)
-        const text = $('.team-accordeon__text' , item);
+        const items = $('.team-accordeon__item', list);
+        const content = $('.team-accordeon__content', item);
+        const allContent = $('.team-accordeon__content', list)
+        const text = $('.team-accordeon__text', item);
         const textHeight = text.outerHeight();
 
         if (!item.hasClass('team-accordeon__item_active')) {
@@ -41,21 +96,21 @@ $(function () {
             item.addClass('team-accordeon__item_active')
 
             allContent.css({
-                'height' : 0
+                'height': 0
             })
-            
+
             content.css({
-                'height' : textHeight
+                'height': textHeight
             })
-            
+
         } else {
             item.removeClass('team-accordeon__item_active')
             content.css({
-                'height' : 0
+                'height': 0
             })
         }
 
-       
+
     })
 })
 
@@ -75,6 +130,19 @@ $(function () {
         const bigMenu = 540;
         const smallWidth = screenWidth - 240
         const smallWidthPhone = screenWidth - 80
+        const siblingsItemMenu = itemMenu.siblings()
+        
+        
+        $('.menu-accordeon__close').on('click', e => {
+            itemMenu.removeClass('menu-accordeon__item_active')
+            textMenu.css({
+                'width': 0
+            })
+            siblingsItemMenu.css({
+                'display' : 'flex'
+            })
+        })
+
 
 
         if (!itemMenu.hasClass('menu-accordeon__item_active')) {
@@ -89,19 +157,19 @@ $(function () {
                 textMenu.css({
                     'width': bigMenu
                 })
-            } else if (screenWidth <= 768) {
+            } if (screenWidth <= 768) {
                 textMenu.css({
                     'width': smallWidth
                 })
 
-            } else if (screenWidth > 480) {
-                textMenu.css({
-                    'width': smallWidth
-                })
-            } else {
+            } if (screenWidth <= 480) {
                 textMenu.css({
                     'width': smallWidthPhone
                 })
+                siblingsItemMenu.css({
+                    'display' : 'none'
+                })
+
             }
 
 
@@ -109,6 +177,9 @@ $(function () {
             itemMenu.removeClass('menu-accordeon__item_active')
             textMenu.css({
                 'width': 0
+            })
+            siblingsItemMenu.css({
+                'display' : 'flex'
             })
         }
 

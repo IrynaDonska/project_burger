@@ -25,6 +25,7 @@
 
         &:hover {
             border: rem(1) solid white;  
+            transition: .5s;
         }
 
         &::after {
