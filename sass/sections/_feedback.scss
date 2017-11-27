@@ -147,6 +147,7 @@
                 @include order-button;
                 background: $dark;
                 width: rem(110);
+                text-align: center;
             
                 &:hover {
                     background: #1f2122;

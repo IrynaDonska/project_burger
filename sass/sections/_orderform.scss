@@ -232,12 +232,13 @@
             border-radius: 50%;
             background: $orange;
             top: rem(6.5);
-            left: rem(4.5); 
+            left: rem(4); 
 
         }
     }
 
 
+    
 
 
     &__block-title_call {
@@ -329,4 +330,12 @@
 
   
 
+//стиль отправки формы
+
+.success{
+    color: $orange;
+}
+.error{
+    color: $dark;
+}   
 

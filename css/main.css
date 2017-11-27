@@ -1215,7 +1215,8 @@ input:focus, textarea:focus {
         width: 6.0625rem;
         cursor: pointer;
         background: #2f3234;
-        width: 6.875rem; }
+        width: 6.875rem;
+        text-align: center; }
         .feedback__list .feedback__item .feedback__text .feedback__button:hover {
           background: #1f2122;
           -webkit-transition: 0.5s;
@@ -1593,7 +1594,7 @@ input:focus, textarea:focus {
     border-radius: 50%;
     background: #e45028;
     top: 0.40625rem;
-    left: 0.28125rem; }
+    left: 0.25rem; }
 
 .form__block-title_call {
   padding-left: 1.5625rem;
@@ -1672,6 +1673,12 @@ input:focus, textarea:focus {
 
 .form__call-element:checked + .form__block-title_call:after {
   content: "\2714"; }
+
+.success {
+  color: green; }
+
+.error {
+  color: red; }
 
 .team {
   background: url("./../pictures/backgrounds/team.jpg") center center no-repeat;

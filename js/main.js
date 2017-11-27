@@ -1,27 +1,30 @@
 //hidden-menu
 
 $(function () {
-    let menuLink = document.getElementById('menu-link')
-    let hiddenMenu = document.getElementById('hidden-menu')
-    let closeMenu = document.getElementById('close-menu')
-    let hiddenMenuItem = document.querySelector('.hidden-menu__item')
+    let menuLink = $('.menu-link')
+    let hiddenMenu = $('.hidden-menu')
+    let closeMenu = $('.hidden-menu__header-close')
+    let hiddenMenuItem = $('.hidden-menu__item')
+    let logoMenu = $('.header__logo')
 
-    
 
-    menuLink.addEventListener('click', function () {
-        hiddenMenu.classList.add('hidden-menu_active')
-        
+    logoMenu.on('click', () => {
+        hiddenMenu.addClass('hidden-menu_active')
+    })
 
+    menuLink.on('click', () => {
+        hiddenMenu.addClass('hidden-menu_active')
+    })
+
+    hiddenMenuItem.on('click', e => {
+        hiddenMenu.removeClass('hidden-menu_active')
+    })
+
+    closeMenu.on('click', () => {
+        hiddenMenu.removeClass('hidden-menu_active')
     })
 
 
-    $('.hidden-menu__item').on('click', e => {
-        hiddenMenu.classList.remove('hidden-menu_active')
-    })
-
-    closeMenu.addEventListener('click', function () {
-        hiddenMenu.classList.remove('hidden-menu_active')
-    })
 
 })
 
@@ -32,49 +35,47 @@ $(function () {
         const $pictureComp = $(e.currentTarget);
         const siblingsBurgComp = $pictureComp.siblings(".composition-droptitle")
         const screenWidth = $(window).width();
-        
 
-        if(screenWidth > 780) {
-            if (!siblingsBurgComp.hasClass('composition-droptitle_active')){
+
+        if (screenWidth > 780) {
+            if (!siblingsBurgComp.hasClass('composition-droptitle_active')) {
                 siblingsBurgComp.addClass('composition-droptitle_active')
                 $pictureComp.css({
-                    'background' : '#e35028'
+                    'background': '#e35028'
                 })
             } else {
                 siblingsBurgComp.removeClass('composition-droptitle_active')
                 $pictureComp.css({
-                    'background' : '#f08c33'
+                    'background': '#f08c33'
                 })
             }
         } else {
             siblingsBurgComp.addClass('composition-droptitle_active')
             $pictureComp.css({
-                'background' : '#e35028'
+                'background': '#e35028'
             })
 
         }
 
-       
+
 
         $('.composition-list__item-close').on('click', e => {
             siblingsBurgComp.removeClass('composition-droptitle_active')
             $pictureComp.css({
-                'background' : '#f08c33'
+                'background': '#f08c33'
             })
-            $pictureComp.on('click') , () => {
+            $pictureComp.on('click'), () => {
                 return false
             }
         })
-        
 
-       
-       
-    }) 
+
+
+
+    })
 
 
 })
-
-
 
 //team accordeon
 $(function () {
@@ -115,7 +116,6 @@ $(function () {
 })
 
 //menu-accordeon
-
 $(function () {
     $('.menu-accordeon__trigger').on('click', e => {
         e.preventDefault()
@@ -131,15 +131,15 @@ $(function () {
         const smallWidth = screenWidth - 240
         const smallWidthPhone = screenWidth - 80
         const siblingsItemMenu = itemMenu.siblings()
-        
-        
+
+
         $('.menu-accordeon__close').on('click', e => {
             itemMenu.removeClass('menu-accordeon__item_active')
             textMenu.css({
                 'width': 0
             })
             siblingsItemMenu.css({
-                'display' : 'flex'
+                'display': 'flex'
             })
         })
 
@@ -157,17 +157,19 @@ $(function () {
                 textMenu.css({
                     'width': bigMenu
                 })
-            } if (screenWidth <= 768) {
+            }
+            if (screenWidth <= 768) {
                 textMenu.css({
                     'width': smallWidth
                 })
 
-            } if (screenWidth <= 480) {
+            }
+            if (screenWidth <= 480) {
                 textMenu.css({
                     'width': smallWidthPhone
                 })
                 siblingsItemMenu.css({
-                    'display' : 'none'
+                    'display': 'none'
                 })
 
             }
@@ -179,9 +181,18 @@ $(function () {
                 'width': 0
             })
             siblingsItemMenu.css({
-                'display' : 'flex'
+                'display': 'flex'
             })
         }
+
+        $(document).mouseup(function (e) {
+            if (itemMenu.has(e.target).length === 0) {
+                itemMenu.removeClass('menu-accordeon__item_active');
+                textMenu.css({
+                    'width': 0
+                })
+            }
+        });
 
 
     })
@@ -200,7 +211,6 @@ $(function () {
 
 
 //slider burger
-
 $(function () {
     let burgersItem = document.querySelectorAll('.burgers__item');
     let burgersItemLength = burgersItem.length
@@ -235,6 +245,52 @@ $(function () {
     }
 })
 
+/*$(function () {
+    const burgersItem = $('.burgers__item');
+    const burgersItemLength = burgersItem.length
+    const buttonPrev = $('.button-burgers__previous');
+    const buttonNext = $('.button-burgers__next');
+    const currentBurgersItem = 0;
+
+
+    burgersItem.eq(0).css({
+        'display': 'flex'
+    });
+
+
+    buttonNext.on('click', () => {
+        burgersItem.eq(currentBurgersItem).css({
+            'display': 'none'
+        });
+        currentBurgersItem = getBurgersItemNumber(currentBurgersItem + 1);
+        burgersItem.eq(currentBurgersItem).css({
+            'display': 'flex'
+        });
+    });
+
+    buttonPrev.on('click', () => {
+        burgersItem.eq(currentBurgersItem).css({
+            'display': 'none'
+        });
+        currentBurgersItem = getBurgersItemNumber(currentBurgersItem - 1);
+        burgersItem.eq(currentBurgersItem).css({
+            'display': 'flex'
+        });
+
+    });
+
+    function getBurgersItemNumber(num) {
+        if (num === -1) {
+            num = burgersItemLength - 1;
+        }
+        if (num === burgersItemLength) {
+            num = 0;
+        }
+        return num
+    }
+})*/
+
+
 
 //one page scroll
 $(function () {
@@ -246,7 +302,7 @@ $(function () {
     const mobileDetect = new MobileDetect(window.navigator.userAgent);
     const isMobile = mobileDetect.mobile();
 
-    const paginationActive = sectionEq => { //навешиваем активный класс на елемент пагинации
+    const paginationActive = sectionEq => {
         $('.pagination-item').eq(sectionEq).addClass('pagination-item_active')
             .siblings().removeClass('pagination-item_active');
     }
@@ -353,3 +409,62 @@ $(function () {
     })
 
 })
+
+
+// ajax order-form
+
+let submitForm = function (ev) {
+    ev.preventDefault();
+
+    const form = $(ev.target);
+
+    const request = ajaxForm(form);
+
+    request.done(function (msg) {
+        const mes = msg.mes,
+            status = msg.status;
+
+        /*if (status === "OK") {
+                $.fancybox.open({
+                    src: '<div class="success">' + mes + '</div>',
+                    type : 'html'
+        
+                    })
+            } else {
+                $.fancybox.open({
+                    src: '<div class="error">' + mes + '</div>',
+                    type : 'html'
+                })
+            }*/
+
+        if (status === 'OK') {
+            form.append('<p class="success">' + mes + '</p>');
+            form.reset();
+
+        } else {
+
+            form.append('<p class="error">' + mes + '</p>');
+        }
+
+    });
+
+    request.fail(function (jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+}
+
+var ajaxForm = function (form) {
+
+    var url = form.attr('action'),
+        data = form.serialize();
+
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        data: data,
+        dataType: 'JSON'
+    });
+
+}
+
+$('#order-form').on('submit', submitForm);
